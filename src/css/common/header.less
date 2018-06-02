@@ -1,0 +1,347 @@
+@import "lesshat";
+header{
+	position: relative;
+  z-index: 1;
+  min-height: 60px;
+  &.sub-open{
+		.transition(background-color .3s ease-in-out);
+    background-color: rgba(0,0,0,0.8);
+  }
+	.showNav{
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+  .nav{
+		.transition(background-color .3s ease-in-out);
+    height: 90px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+  	.logo{	
+  		width: 45px;
+  		margin-top: 19px;
+  		float: left;
+  	}
+  	.navbar{
+  		display: flex;
+      display: -webkit-flex;
+  		float: left;
+  		margin-left: 45px;
+			margin-top: 19px;
+  		.nav-item{
+  			padding: 10px 26px;
+  			border-top: 3px solid;
+  			border-color: transparent;
+  			a{
+  				color: #fff;
+  				opacity: 1;
+  				font-size: 18px;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            opacity: 1;
+          }
+  			}
+  			&.active{
+					border-color: #0978ff;
+					a{
+						opacity: 1;
+					}
+  			}
+  		}
+  	}
+    .nav-right{
+      float: right;
+    }
+  }
+  .products-nav{
+    position: absolute;
+    width: 100%;
+    padding: 0 45px;
+    background: rgba(0,0,0,0.8);
+		display: -webkit-flex;
+		.transition(all .3s ease-in-out);
+		.transform(translateY(-590px));
+		opacity: 0;
+    &.active{
+      display: flex;
+      display: -webkit-flex;
+	    .transform(translateY(0px));
+			border-top: 1px solid rgba(255,255,255,.5);
+	    opacity: 1;
+    }
+		.category-wrapper{
+			display: flex;
+			justify-content: space-between;
+		}
+    .category{
+      margin: 30px 0;
+      float: left;
+      &.col-2{
+        width: 40%;
+        .li-content{
+          display: flex;
+					flex-direction: column;
+          display: -webkit-flex;
+          flex-wrap: wrap;
+          ul li{
+            width: 50%;
+          }
+        }
+      }
+			&.col-3{
+				width: 60%;
+				.li-content{
+					display: flex;
+					flex-direction: column;
+					display: -webkit-flex;
+					flex-wrap: wrap;
+					ul li{
+						width: 50%;
+					}
+				}
+			}
+			&.col-4{
+				width: 80%;
+				.li-content{
+					display: flex;
+					flex-direction: column;
+					display: -webkit-flex;
+					flex-wrap: wrap;
+					ul li{
+						width: 50%;
+					}
+				}
+			}
+			.li-content-middle{
+				img{
+					height: 28px!important;
+				}
+			}
+			.li-content-left{
+				ul{
+					height: 391px;
+					img{
+						height: 35px!important;
+					}
+				}
+			}
+			.li-content-right{
+				ul{
+					height: 210px;
+					img{
+						height: 24px!important;
+					}
+				}
+			}
+      .li-content{
+        display: flex;
+				flex-direction: column;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        ul{
+					padding-left: 20px;
+					border-left: 1px solid #0978ff;
+          display: flex;
+          display: -webkit-flex;
+					flex-direction: column;
+					padding-top: 20px;
+          li{
+            width: 100%;
+            font-size: 12px;
+            color: rgba(255,255,255,.5);
+            padding: 15px 0;
+            img{
+              height: 35px;
+              display: block;
+              margin-bottom: 15px;
+              opacity: 0.5;
+              transition: opacity .5s ease-in-out;
+            }
+            img.it{
+              height: 40px;
+              margin-bottom: 30px;
+            }
+            a{
+              color: rgba(255,255,255,.5);
+              font-size: 14px;
+              transition: all .5s ease-in-out;
+            }
+            &:hover{
+              img{
+                opacity: 1;
+              }
+              a{
+                color: rgba(255, 255, 255, 1);
+              }
+            }
+          }
+        }
+        .title{
+					padding: 5px 0 5px 14px;
+					border-left: 6px solid #0978ff;
+					margin: 0;
+          font-size: 16px;
+          color: #0978ff;
+        }
+      }
+			.li-content-left{
+				ul{
+					min-height: 380px;
+				}
+			}
+			.li-content-right{
+				ul{
+					min-height: 165px;
+				}
+			}
+    }
+  }
+  //手机导航
+
+  .navbar-toggle-btn{
+    position: absolute;
+		z-index: 10;
+    right: 15px;
+    top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    .bar{
+      background-color: rgba(255,255,255,1);
+      height: 3px;
+      margin-top: 4px;
+      display: block;
+      width: 22px;
+      height: 3px;
+      border-radius: 1px;
+    }
+  }
+
+  .mobile-navbar{
+		position: absolute;
+		width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    padding-top: 60px;
+    display: none;
+    .nav-item{
+      padding: 10px 0;
+      background: rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      .item-title{
+        padding: 10px 0;
+      }
+      li{
+        padding: 5px 0;
+        a{
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media(max-width: 1199px){
+	header{
+				.products-nav{
+					.transform(translateY(-640px));
+				}
+	}
+}
+@media(max-width:991px){
+	footer{
+		.contents{
+			flex-direction: column;
+			.logo{
+				display: none;
+			}
+			.info{
+				width: 100%;
+			}
+		}
+		.copyright{
+			.contents-end{
+				flex-direction: column;
+				text-align: center;
+				font-size: 12px;
+				.info{
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+@media(max-width:991px) and(min-width:768px){
+  header .products-nav {
+    .category{
+      width: 20%;
+      .li-content{
+        .title{
+          font-size: 18px;
+        }
+        ul li img.it{
+          height: 35px;
+          margin-bottom: 35px;
+        }
+      }
+      &.col-2 {
+        width: 25%;
+        .li-content{
+          ul li {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 767px){
+  header{
+    .navbar-toggle-btn{
+      display: block;
+    }
+    .nav{
+      .navbar{
+        display: none;
+      }
+    }
+		.products-nav{
+			display: none;
+		}
+  }
+	footer{
+		.contents{
+			.info{
+				.about,.help{
+					width: 33.3333%;
+				}
+				.products{
+					width: 33.333%;
+					ul{
+						li{
+							width: 100%;
+						}
+					}
+				}
+				.about,.help{
+					align-items: center;
+				}
+			}
+		}
+	}
+}
+@media(max-width: 480px){
+	header{
+		.nav{
+			height: 77px;
+		}
+	}
+}
