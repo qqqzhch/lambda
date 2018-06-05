@@ -18,10 +18,12 @@ header{
 		left: 0;
 		top: 0;
 		width: 100%;
-  	.logo{	
-  		width: 45px;
+  	.logo{
   		margin-top: 19px;
   		float: left;
+			a{
+				display: block;
+			}
   	}
   	.navbar{
   		display: flex;
@@ -341,7 +343,13 @@ header{
 @media(max-width: 480px){
 	header{
 		.nav{
-			height: 77px;
+			height: 60px;
+			.logo{
+				margin-top: 10px;
+				img{
+					height: 40px;
+				}
+			}
 		}
 	}
 }

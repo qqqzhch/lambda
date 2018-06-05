@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var indexmao = ['scene', 'principle', 'ecosystem', 'roadmap'];
 	$('.mao').on('click',function(){
 		maoId	= indexmao[$(this).index()];
-		$("html,body").animate({scrollTop: $('#'+maoId).offset().top+$("body").scrollTop()}, 500);
+		$("html,body").animate({scrollTop: $('#'+maoId).offset().top}, 500);
 	})
 	$(document).scroll( function (event){
 			var  topScroll = $(window).scrollTop();
