@@ -66,5 +66,10 @@ $(document).ready(function(){
 		}
 	});
 
+  $('.mobile-navbar li').on('click',function(){
+		$('.mobile-navbar').hide();
+		$('body').removeClass('modal-open');
+		headerState.mobileNavOpen = false;
+	})
 
 });
