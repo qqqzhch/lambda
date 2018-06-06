@@ -16,8 +16,8 @@ require('jquery-countdown');
 $(document).ready(function(){
 	// 增加事件
 	//倒计时
-	$('#getting-started').countdown('2018/06/01', function(event) {
-		$(this).html('<p>'+event.strftime('%d')+'</p>:'+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
+	$('#getting-started').countdown('2018/06/30', function(event) {
+		$(this).html('<p>'+event.strftime('%n')+'</p>:'+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
 	});
 	$('.line').css('width',window.screen.width);
 	$('.scene .item').on('click',function(){
@@ -28,8 +28,6 @@ $(document).ready(function(){
 	$('.principle .item').on('click',function(){
 		$(this).addClass('active').siblings().removeClass('active');
 		var _index = $(this).index()-1;
-		$('.principle .tab-contents p').eq(_index).addClass('contents-active').siblings().removeClass('contents-active');
+		$('.principle .tab-contents div').eq(_index).addClass('contents-active').siblings().removeClass('contents-active');
 	})
-
-
 });
