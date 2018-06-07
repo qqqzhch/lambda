@@ -63,10 +63,17 @@
 				<div class="mobile-navbar">
 					<div class="nav-item active" id="products" style="border-top: 1px solid rgba(255,255,255,.2)">
 						<ul>
+							<% if(pageId === 'index') {%>
 							<li class="mao"><a href="javascript:;">使用场景</a></li>
 							<li class="mao"><a href="javascript:;">工作原理</a></li>
 							<li class="mao"><a href="javascript:;">生态系统</a></li>
 							<li class="mao"><a href="javascript:;">路线图</a></li>
+							<% } else if(pageId === 'indexEn'){ %>
+								<li class="mao"><a href="javascript:;">APPLICATION SCENARIOS</a></li>
+								<li class="mao"><a href="javascript:;">WORKING PRINCIPLE</a></li>
+								<li class="mao"><a href="javascript:;">ECOSYSTEM</a></li>
+								<li class="mao"><a href="javascript:;">ROADMAP</a></li>
+							<% } %>
 						</ul>
 					</div>
 					<!-- <div class="nav-item" id="solutions" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">

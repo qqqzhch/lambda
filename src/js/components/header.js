@@ -72,4 +72,6 @@ $(document).ready(function(){
 		headerState.mobileNavOpen = false;
 	})
 
+	$('.mobile-navbar').css('height',window.screen.height)
+
 });
