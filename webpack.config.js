@@ -24,7 +24,12 @@ const debug = process.env.NODE_ENV !== 'production';
 
 
 var entries = getEntry('src/js/page/**/**.js','src/js/page/');
+
+console.log(entries)
+
 var chunks = Object.keys(entries);
+
+
 // 'publicPath': '/dist/',
 var settings = {
 	'publicPath': '/',
@@ -112,13 +117,21 @@ var config = {
 		inline: true,
 		hot: true,
 		quiet: true,
-		disableHostCheck: true
+		disableHostCheck: true,
+		proxy: {
+					'/api/': {
+							target: 'http://192.168.0.190:8000/',
+							secure: false
+					}
+			}
+
 	}
 }
 
 // HtmlWebpackPlugin 入口为 template（pages下的js），输出html
 var pages = Object.keys(getEntry('src/view/pages/**/**.js','src/view/pages/'));
 
+console.log(pages)
 pages.forEach(function(pathname){
 	var conf = {
 		alwaysWriteToDisk: true,
