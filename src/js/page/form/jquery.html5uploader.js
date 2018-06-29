@@ -1,4 +1,6 @@
 var jQuery = require("jquery");
+require("../../../css/page/jquery-confirm.less");
+require('../../../js/components/jquery-confirm.js');
 (function ($) {
 
     $.fn.html5Uploader = function (options) {
@@ -64,11 +66,12 @@ var jQuery = require("jquery");
           console.log(file);
           var filetypelist =file.name.split('.') ;
           if(filetypelist.length==0){
-            alert('文件格式异常，仅支持上传图片 ')
+
+            $.alert('Only supports uploading pictures')
           }
           var filetype=filetypelist[filetypelist.length-1];
           if(["jpg","jpeg","png","doc"].indexOf(filetype.toLowerCase())<0){
-            alert('不支持上该类型文件，仅支持上传图片 ')
+            $.alert('Only supports uploading pictures')
           return false;
           }
             var fileReader = new FileReader();

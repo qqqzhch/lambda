@@ -13,11 +13,18 @@ require("../../js/components/header.js");
 require("../../js/components/cookie.js");
 require('jquery-countdown');
 
+var checkethaddress = require("../../js/components/ethaddress.js");
+
 
 var cookies = require('js-cookie');
 
 
 const queryString = require('query-string');
+
+var jQuery = require("jquery");
+
+require("../../css/page/jquery-confirm.less");
+require('../../js/components/jquery-confirm.js');
 
 
 var refer='';
@@ -38,6 +45,11 @@ if(parsed.refer){
 	$("#ethaddressbtn").click(function () {
 		var ethaddress = $("#ethaddress").val();
 		 console.log(ethaddress);
+		 if(checkethaddress(ethaddress)==false){
+			 console.log('不合法')
+			 $.alert('Ethereum address format error')
+			 return ;
+		 }
 
 		 $.ajax({
 		  type: 'POST',
@@ -56,11 +68,14 @@ if(parsed.refer){
 					$("#link").show();
 					document.cookie="token="+data.token;   //   有可能会有时间限制
 
+				}else{
+					$.alert(data.message)
 				}
 
 		  },
 			error: function (data) {
         console.log(data)
+				$.alert('Server exception')
 				// $("#linkhref").text("sssss")
 				// $("#linkhref").attr("href","sssssss")
 				// $("#ethaddressfrom").attr("href","/form/index.html?address="+ethaddress+"&refer="+refer)

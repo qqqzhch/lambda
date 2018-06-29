@@ -18,9 +18,15 @@ require("../../../css/page/from.less");
 
 require('./jquery.html5uploader.js');
 
+
+var checkethaddress = require("../../../js/components/ethaddress.js");
+
 const queryString = require('query-string');
 var cookies = require('js-cookie');
 var token;
+
+require("../../../css/page/jquery-confirm.less");
+require('../../../js/components/jquery-confirm.js');
 
 $(function() {
 
@@ -111,6 +117,36 @@ $(function() {
    });
 
    console.log(indexed_array);
+   if(checkethaddress(indexed_array['ethaddress'])==false ){
+     $.alert('Ethereum address format error')
+     return;
+   }
+
+   if(indexed_array['twitter'].length==0 ){
+     $.alert('Twitter name cannot be empty')
+     return;
+   }
+
+   if(indexed_array['telegram'].length==0 ){
+     $.alert('telegram name cannot be empty')
+     return;
+    }
+
+    if(indexed_array['medium'].length==0 ){
+      $.alert('medium name cannot be empty')
+      return;
+     }
+
+     if(twitterscreenshot==undefined ){
+       $.alert('Twitter screenshot cannot be empty')
+       return;
+      }
+
+      if(Mediumscreenshot == undefined){
+        $.alert('Medium screenshot cannot be empty')
+        return;
+      }
+
 
     var objpra={
       eth_address:indexed_array['ethaddress'],
@@ -128,13 +164,18 @@ $(function() {
    		  data: objpra,
    		  success: function (data) {
           console.log(data);
-          
-          $('#fromdiv').hide();
-          $('#fromresult').show();
+          if(data.status=='ok'){
+            $('#fromdiv').hide();
+            $('#fromresult').show();
+          }else{
+            $.alert(data.message);
+          }
+
 
    		  },
    			error: function (data) {
            console.log(data)
+           $.alert('Server exception')
    				// $("#linkhref").text("sssss")
    				// $("#linkhref").attr("href","sssssss")
    				// $("#ethaddressfrom").attr("href","/form/index.html?address="+ethaddress+"&refer="+refer)

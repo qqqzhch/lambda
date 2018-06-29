@@ -52,6 +52,10 @@ var config = {
 		filename: 'js/[name].js',
 		chunkFilename: 'js/[id].chunk.js?[chunkhash]'
 	},
+	target: 'web',
+	externals: {
+  	"window":"window"
+ 	},
 	module: {
 		loaders: [ //加载器，关于各个加载器的参数配置，可自行搜索之。
 			{
