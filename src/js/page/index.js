@@ -60,8 +60,8 @@ if(parsed.refer){
 		  success: function (data) {
         console.log(data)
 				if(data.status=='ok'){
-					$("#linkhref").text("sssss")
-					$("#linkhref").attr("href","sssssss")
+					$("#linkhref").text("http://activity.lambda.im/index.html?refer="+ethaddress)
+					$("#linkhref").attr("href","http://activity.lambda.im/index.html?refer="+ethaddress)
 					$("#ethaddressfrom").attr("href","/form/index.html?address="+ethaddress+"&refer="+refer)
 
 					$("#ethbtn").hide();

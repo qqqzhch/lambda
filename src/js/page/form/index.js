@@ -48,7 +48,7 @@ $(function() {
   if(ethaddress){
     $("#ethaddress_input").val(ethaddress);
   }
-
+console.log('- -')
   $("#twitterscreenshot_a").click(function(){
     $("#twitterscreenshot").click();
     $('#twitterscreenshot_url').text('loading')

@@ -140,6 +140,9 @@ require('../../../js/components/jquery-confirm.js');
                 if (settings.onSuccess && xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) {
                     settings.onSuccess(e, file, xmlHttpRequest.responseText);
                 }
+                if(xmlHttpRequest.readyState==4&&xmlHttpRequest.status != 200){
+                  settings.onServerError(e, file);
+                }
             };
             xmlHttpRequest.open("POST", settings.postUrl, true);
 
@@ -160,7 +163,7 @@ require('../../../js/components/jquery-confirm.js');
 
                 var formData = new FormData();
                 formData.append(settings.name, file);
-                formData.append("json", window.userid);
+                // formData.append("json", window.userid);
 
                 xmlHttpRequest.send(formData);
 
