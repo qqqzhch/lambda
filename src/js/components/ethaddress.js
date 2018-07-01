@@ -1,3 +1,6 @@
+
+var sha3 = require('./sha3.js');
+
 let isAddress = (address) => {
     if (!/^(0x)?[0-9a-f]{40}$/i.test(address)) {
         // Check if it has the basic requirements of an address
@@ -27,4 +30,4 @@ let isChecksumAddress = function (address) {
     }
     return true;
 };
-module.exports=isAddress 
+module.exports=isAddress
