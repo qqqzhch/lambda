@@ -60,13 +60,15 @@ if(parsed.refer){
 		  success: function (data) {
         console.log(data)
 				if(data.status=='ok'){
-					$("#linkhref").text("http://activity.lambda.im/index.html?refer="+ethaddress)
-					$("#linkhref").attr("href","http://activity.lambda.im/index.html?refer="+ethaddress)
-					$("#ethaddressfrom").attr("href","/form/index.html?address="+ethaddress+"&refer="+refer)
+					// $("#linkhref").text("http://activity.lambda.im/index.html?refer="+ethaddress)
+					// $("#linkhref").attr("href","http://activity.lambda.im/index.html?refer="+ethaddress)
+					// $("#ethaddressfrom").attr("href","/form/index.html?address="+ethaddress+"&refer="+refer)
+          //
+					// $("#ethbtn").hide();
+					// $("#link").show();
 
-					$("#ethbtn").hide();
-					$("#link").show();
 					document.cookie="token="+data.token;   //   有可能会有时间限制
+					window.location.href="/form/index.html?address="+ethaddress+"&refer="+refer
 
 				}else{
 					$.alert(data.message)
