@@ -70,7 +70,7 @@ console.log('- -')
        console.log(data);
        data=JSON.parse(data)
        if(data.file_url){
-         $('#twitterscreenshot_url').text(data.file_url)
+         $('#twitterscreenshot_url').html("<img style='width: 100px;height: 100px' src ='"+data.file_url+"'>")
          twitterscreenshot=data.file_url
        }
 
@@ -101,7 +101,7 @@ console.log('- -')
       console.log(data);
       data=JSON.parse(data)
       if(data.file_url){
-       $('#Mediumscreenshot_url').text(data.file_url);
+       $('#Mediumscreenshot_url').html("<img style='width: 100px;height: 100px' src ='"+data.file_url+"'>");
         Mediumscreenshot=data.file_url;
       }
 
