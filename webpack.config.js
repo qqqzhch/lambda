@@ -59,6 +59,10 @@ var config = {
 	module: {
 		loaders: [ //加载器，关于各个加载器的参数配置，可自行搜索之。
 			{
+				test: /\.js$/,
+
+				loader: 'babel-loader'
+			},{
 				test: /\.css$/,
 				//配置css的抽取器、加载器。'-loader'可以省去
 				loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
@@ -116,7 +120,7 @@ var config = {
 	],
 	devServer: {
 		contentBase: './dist/',
-		host: '0.0.0.0',
+		host: '192.168.0.195',
 		port: 9090,
 		inline: true,
 		hot: true,
@@ -124,8 +128,10 @@ var config = {
 		disableHostCheck: true,
 		proxy: {
 					'/api/': {
-							target: 'http://192.168.0.190:8000/',
+							
+							changeOrigin: true,
 							secure: false
+
 					}
 			}
 
@@ -182,7 +188,7 @@ function getEntry(globPath,pathDir){
 
 		pathname = pathname.replace(/\\/g, '/');
 
-		entries[pathname] = ['./' + entry];
+		entries[pathname] = ["babel-polyfill",'./' + entry];
 	}
 
 	return entries;

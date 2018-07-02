@@ -1,7 +1,7 @@
 
 var sha3 = require('./sha3.js');
 
-let isAddress = (address) => {
+let isAddress = function (address) {
     if (!/^(0x)?[0-9a-f]{40}$/i.test(address)) {
         // Check if it has the basic requirements of an address
         return false;
