@@ -167,6 +167,8 @@ console.log('- -')
           if(data.status=='ok'){
             $('#fromdiv').hide();
             $('#fromresult').show();
+            $("#linkhref").attr("href","http://activity.lambda.im/index.html?refer="+indexed_array['ethaddress']);
+            $("#linkhref").text("http://activity.lambda.im/index.html?refer="+indexed_array['ethaddress']);
           }else{
             $.alert(data.message);
           }
