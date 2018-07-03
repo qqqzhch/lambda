@@ -131,11 +131,11 @@ console.log('- -')
      $.alert('telegram name cannot be empty')
      return;
     }
-
-    if(indexed_array['medium'].length==0 ){
-      $.alert('medium name cannot be empty')
-      return;
-     }
+    // 
+    // if(indexed_array['medium'].length==0 ){
+    //   $.alert('medium name cannot be empty')
+    //   return;
+    //  }
 
      if(twitterscreenshot==undefined ){
        $.alert('Twitter screenshot cannot be empty')

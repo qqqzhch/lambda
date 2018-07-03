@@ -14,11 +14,13 @@ html-webpack-plugin插件，重中之重，webpack中生成HTML的插件，
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
 /*
 提取公共模块的插件
 */
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
-var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+// var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 const debug = process.env.NODE_ENV !== 'production';
 
@@ -128,7 +130,7 @@ var config = {
 		disableHostCheck: true,
 		proxy: {
 					'/api/': {
-							
+							target: 'http://activity.lambda.im/',
 							changeOrigin: true,
 							secure: false
 
@@ -164,7 +166,11 @@ config.plugins.push(new HtmlWebpackHarddiskPlugin({
 		outputPath: path.resolve(__dirname,'dist')
 }));
 
-
+if (process.env.ENV == 'production') {
+	config.plugins.push(new UglifyJsPlugin())
+}else{
+	console.log('dev')
+}
 
 module.exports = config;
 
