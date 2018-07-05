@@ -120,19 +120,19 @@ var config = {
 	],
 	devServer: {
 		contentBase: './dist/',
-		host: '192.168.0.195',
+		host: 'localhost',
 		port: 9090,
 		inline: true,
 		hot: true,
 		quiet: true,
 		disableHostCheck: true,
 		proxy: {
-					'/api/': {
-							
-							changeOrigin: true,
-							secure: false
-
-					}
+					// '/api/': {
+          //
+					// 		changeOrigin: true,
+					// 		secure: false
+          //
+					// }
 			}
 
 	}
