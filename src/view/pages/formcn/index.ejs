@@ -37,21 +37,25 @@
 						<p  class="Explain"  style="color: black">
 							您的ETH钱包地址（作为您此次活动独有的ID认证，已在第一页填写完毕）
 					  </p>
-						<input class="input100" type="text" id="ethaddress_input" name="ethaddress" placeholder="Your ETH wallet address">
+						<input class="input100" type="text" id="ethaddress_input" name="ethaddress" placeholder="输入以太坊的地址">
 
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<p  class="Explain" >
-							关注 Lambda官方微信账号: <a target="_blank" href="http://weixin.qq.com/r/Hip-Z_7EjbPyraoE938M">http://weixin.qq.com/r/Hip-Z_7EjbPyraoE938M</a>
+
+							<div style="">
+								<div class="Explain">关注 Lambda官方微信账号:长按压图片关注Lambda 微信公众号 </div>
+								<img style="width:80px;" src="<%= require('../../../img/weixin.jpg') %>" alt="">
+							</div>
 					  </p>
-						<input class="input100" type="text" name="telegram" placeholder="输入您的微博账号名">
+						<input class="input100" type="text" name="telegram" placeholder="输入您的微信账号名">
 
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<p  class="Explain" >
 						 	关注 Lambda微博官方账号: <a target="_blank" href="https://weibo.com/lambdaim?is_all=1"> https://weibo.com/lambdaim?is_all=1</a> 
 					  </p>
-						<input class="input100" type="text" name="twitter" placeholder="输入您的微信账号名">
+						<input class="input100" type="text" name="twitter" placeholder="输入您的微博账号名">
 
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
@@ -75,7 +79,7 @@
 					</div> -->
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<p  class="Explain" >
-							 请上传微信公众号的文章到朋友圈的截图作为凭证
+							 请上传转发微信公众号的文章到朋友圈的截图作为凭证
 					  </p>
 						<a class="contact100-form-btn" id="Mediumscreenshot_a">
 							选择文件
@@ -98,11 +102,8 @@
 							提交
 						</a>
 					</div>
-					<div style="text-align:center">
-						<div class="Explain">长按压图片关注lambda 微信公众号 </div>
-						<img src="<%= require('../../../img/weixin.jpg') %>" alt="">
-					</div>
-					
+
+
 
 
 		</div>
