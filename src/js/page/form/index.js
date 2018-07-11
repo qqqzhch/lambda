@@ -131,7 +131,7 @@ console.log('- -')
      $.alert('telegram name cannot be empty')
      return;
     }
-    // 
+    //
     // if(indexed_array['medium'].length==0 ){
     //   $.alert('medium name cannot be empty')
     //   return;
@@ -142,10 +142,10 @@ console.log('- -')
        return;
       }
 
-      if(Mediumscreenshot == undefined){
-        $.alert('Medium screenshot cannot be empty')
-        return;
-      }
+      // if(Mediumscreenshot == undefined){
+      //   $.alert('Medium screenshot cannot be empty')
+      //   return;
+      // }
 
 
     var objpra={
