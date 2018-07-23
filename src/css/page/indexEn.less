@@ -865,9 +865,25 @@ section.partners{
 		}
 		li{
 			width: 26px;
-			margin-right: 5%;
+			margin-right: 10px;
 			height: auto;
 			display: inline-block;
+		}
+	}
+}
+
+
+
+
+.wechatitem{
+	position: relative;
+	.wechatQRcode{
+		position: absolute;
+		display: none;
+	}
+	&:hover{
+		.wechatQRcode{
+			display: block;
 		}
 	}
 }
