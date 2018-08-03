@@ -16,8 +16,8 @@ require('jquery-countdown');
 $(document).ready(function(){
 	// 增加事件
 	//倒计时
-	$('#getting-started').countdown('2018/06/30', function(event) {
-		$(this).html('<p>'+event.strftime('%n')+'</p>:'+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
+	$('#getting-started').countdown('2018/08/20', function(event) {
+		$(this).html('<p>'+event.strftime('%n')+'</p>  '+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
 	});
 	$('.line').css('width',window.screen.width);
 	$('.scene .item').on('click',function(){
