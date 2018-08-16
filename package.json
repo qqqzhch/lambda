@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "copy-webpack-plugin": "^4.5.2",
     "crypto-js": "^3.1.9-1",
     "http-server": "^0.11.1",
     "jquery-confirm": "^3.3.2",
