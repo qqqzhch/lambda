@@ -4,9 +4,9 @@
   "org": {
     "candidate_name": "EOS Lambda",
     "website": "https://bridgepool.lambda.im",
-    "code_of_conduct": "",
-    "ownership_disclosure": "",
-    "email": "",
+    "code_of_conduct": "https://blog.lambda.im/2018/08/17/lambda-bridge-pool-block-producer-candidate-introduction",
+    "ownership_disclosure": "https://blog.lambda.im/2018/08/17/lambda-bridge-pool-block-producer-candidate-introduction",
+    "email": "info@lambda.im",
     "branding": {
       "logo_1024": "https://bridgepool.lambda.im/Lambda-Bridge-Pool-1024x1024.png",
       "logo_256": "https://bridgepool.lambda.im/Lambda-Pool-256x256.png",
