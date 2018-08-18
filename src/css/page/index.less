@@ -7,7 +7,18 @@
 html,body{
 
 }
-
+header{
+	.nav{
+		.navbar{
+			.nav-item{
+				padding: 18px 10px;
+				a{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
 .imglogo-wrapper{
 	height: 90px;
 	.car{
@@ -66,7 +77,7 @@ section.banner-contents{
 		-webkit-text-fill-color: transparent;
 	}
 	.btn{
-		margin-top: 61px;
+		margin-top: 21px;
 		display: inline-block;
 		color: #fff;
 		padding: 9px 32px 11px;
@@ -395,6 +406,12 @@ section.team{
 				display: block;
 				width: 100%;
 			}
+			.userlinkimg{
+				position: absolute;
+				width: 20px;
+				bottom: 0px;
+				left: 0px;
+			}
 		}
 		.name{
 			font-size: 20px;
@@ -403,6 +420,7 @@ section.team{
 			.background-clip(text);
 			-webkit-text-fill-color: transparent;
 			text-align: center;
+			min-height: 100px;
 		}
 	}
 }
@@ -442,6 +460,9 @@ section.partners{
 	section.hero-image{
 		height: 700px;
 	}
+	.scene-item {
+		min-height: 650px;
+	}
 }
 @media(max-width:1199px){
 	section.banner-contents{
@@ -464,7 +485,7 @@ section.partners{
 
 	}
 	.scene-item {
-		height: 480px;
+		height: 650px;
 	}
 }
 @media (min-width:992px) {
@@ -495,6 +516,13 @@ section.partners{
 	}
 }
 @media(min-width: 768px) and (max-width: 991px){
+	header{
+	.nav{
+		.nav-right{
+			display: none;
+		}
+	}
+}
 	section.roadmap {
 
 	}
@@ -625,9 +653,6 @@ section.partners{
 		.box-wrapper{
 			margin-top: 0;
 		}
-		.left-num{
-			font-size: 40px;
-		}
 	}
 	section.banner-contents{
 		padding-top: 50px;
@@ -647,9 +672,13 @@ section.partners{
 
 	section.team{
 		.head{
-			margin-top: 40px;
+			margin-top: 20px;
+
 			.name{
 				font-size: 16px;
+				min-height: 40px;
+				line-height: 16px;
+				// min-height: 100px;
 			}
 		}
 		h2{
@@ -728,7 +757,10 @@ section.partners{
 	}
 	section.banner-contents{
 		h1{
-			font-size: 30px;
+			font-size: 24px;
+		}
+		h2{
+			font-size: 18px;
 		}
 		.crowd{
 			.countdown{
@@ -830,4 +862,59 @@ section.partners{
 }
 .star-field .layer:nth-child(3) {
   animation: sf-fly-by-3 5s linear infinite;
+}
+
+.partners768{
+
+	margin-top: 30px;
+}
+.banner-contents{
+	.contact{
+		margin-top: 40px;
+		img{
+			width: 26px;
+		}
+		li{
+			width: 26px;
+			margin-right: 10px;
+			height: auto;
+			display: inline-block;
+		}
+	}
+}
+
+
+
+
+.wechatitem{
+	position: relative;
+	.wechatQRcode{
+		position: absolute;
+		display: none;
+	}
+	&:hover{
+		.wechatQRcode{
+			display: block;
+		}
+	}
+}
+
+.firstbgimg{
+	// background-image: url();
+}
+
+.firstBtn{
+	margin-right: 20px;
+	width: 230px;
+	text-align: center;
+}
+.sendBtn{
+	width: 230px;
+	text-align: center;
+
+}
+
+
+.userimga{
+	position: relative;
 }
