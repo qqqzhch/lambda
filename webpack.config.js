@@ -13,6 +13,8 @@ html-webpack-plugin插件，重中之重，webpack中生成HTML的插件，
  */
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 /*
 提取公共模块的插件
@@ -102,7 +104,10 @@ var config = {
 		// 	},
 		// 	except: ['$super','$','exports','require']
 		// })
+		new CopyWebpackPlugin([
+			{ from: './copy', to: '' },
 
+		]),
 		new webpack.HotModuleReplacementPlugin()
 	],
 	devServer: {

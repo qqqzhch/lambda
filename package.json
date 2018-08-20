@@ -5,7 +5,7 @@
   "scripts": {
     "test": "null",
     "dev": "rm -rf dist/  && webpack && webpack-dev-server",
-    "build": "rm -rf dist/  && env ENV=production  webpack"
+    "build": "rm -rf dist/  && env ENV=production  webpack -p"
   },
   "author": "lambda-fed",
   "devDependencies": {
@@ -29,10 +29,13 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^4.5.2",
     "http-server": "^0.11.1",
+    "imagemin-webpack-plugin": "^2.2.0",
     "jquery-countdown": "^2.2.0",
     "lesshat": "^4.1.0",
     "slick-carousel": "^1.6.0",
-    "swiper": "^3.4.2"
+    "swiper": "^3.4.2",
+    "uglifyjs-webpack-plugin": "^1.3.0"
   }
 }
