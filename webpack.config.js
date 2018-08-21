@@ -14,6 +14,9 @@ html-webpack-plugin插件，重中之重，webpack中生成HTML的插件，
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+var ImageminPlugin = require('imagemin-webpack-plugin').default;
+var ManifestPlugin = require('webpack-manifest-plugin');
+
 
 
 /*
@@ -47,7 +50,7 @@ var config = {
 		path: path.join(__dirname,'dist'),//生成文件的根目录
 		publicPath: settings.publicPath,//针对浏览器的路径，开发环境和生产环境不一样
 		filename: 'js/[name].js',
-		chunkFilename: 'js/[id].chunk.js?[chunkhash]'
+		chunkFilename: 'js/[id][chunkhash].chunk.js'
 	},
 	module: {
 		loaders: [ //加载器，关于各个加载器的参数配置，可自行搜索之。
@@ -106,8 +109,20 @@ var config = {
 		// })
 		new CopyWebpackPlugin([
 			{ from: './copy', to: '' },
-
 		]),
+		new ImageminPlugin({
+			disable: debug==false, // Disable during development
+			pngquant: {
+				quality: '70-100'
+			}
+		}),
+		// new ManifestPlugin({
+		//   fileName: 'manifest.json',
+		//   basePath: settings.publicPath,
+		//   seed: {
+		//     name: 'Manifest'
+		//   }
+		// }),
 		new webpack.HotModuleReplacementPlugin()
 	],
 	devServer: {
@@ -121,6 +136,10 @@ var config = {
 	}
 }
 
+config.plugins.push(new HtmlWebpackHarddiskPlugin({
+		outputPath: path.resolve(__dirname,'dist')
+}));
+
 // HtmlWebpackPlugin 入口为 template（pages下的js），输出html
 var pages = Object.keys(getEntry('src/view/pages/**/**.js','src/view/pages/'));
 
@@ -129,22 +148,32 @@ pages.forEach(function(pathname){
 		alwaysWriteToDisk: true,
 		filename: '../dist/' + pathname + '.html',
 		template: 'src/view/pages/' + pathname + '.js',
-		inject: false
+		inject: false,
+		minify:{
+			removeComments: true,
+			collapseWhitespace: true
+		}
 	};
 
 	if (pathname in config.entry) {
 		conf.favicon = path.resolve(__dirname,'src/img/favicon.ico');
 		conf.inject = 'body';
 		conf.chunks = ['vendors',pathname];
-		conf.hash = true;
+		conf.hash = true ;
+		// if(debug==false){
+		// conf.minify= {
+		// 	 removeComments: true,
+		// 	 collapseWhitespace: true,
+		// 	 conservativeCollapse: true
+		//  } ;
+		// }
+
 	}
 
 	config.plugins.push(new HtmlWebpackPlugin(conf));
 })
 
-config.plugins.push(new HtmlWebpackHarddiskPlugin({
-		outputPath: path.resolve(__dirname,'dist')
-}));
+
 
 
 
