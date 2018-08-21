@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	var maoId = "";
-	var indexmao = ['scene', 'principle', 'ecosystem', 'roadmap'];
+	var indexmao = ['scene', 'principle', 'ecosystem','tokensale', 'roadmap'];
 	$('.mao').on('click',function(){
 		maoId	= indexmao[$(this).index()];
 		$("html,body").animate({scrollTop: $('#'+maoId).offset().top}, 500);
