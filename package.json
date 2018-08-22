@@ -29,6 +29,10 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "6.x",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "copy-webpack-plugin": "^4.5.2",
     "html-minifier": "^3.5.20",
     "http-server": "^0.11.1",

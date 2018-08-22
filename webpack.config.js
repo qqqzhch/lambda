@@ -80,7 +80,11 @@ var config = {
 				//如下配置，将小于8192byte的图片转成base64码
 				test: /\.(png|jpg|gif|svg)$/,
 				loader: settings.urlLoader
-			}
+			}, {
+      test: /\.js$/,
+      	// exclude: /(node_modules|bower_components)/,
+      	loader: 'babel-loader',
+    }
 		]
 	},
 	resolve: {
@@ -199,9 +203,9 @@ function getEntry(globPath,pathDir){
 
 		pathname = pathname.replace(/\\/g, '/');
 
-		entries[pathname] = ['./' + entry];
+		entries[pathname] = ["babel-polyfill",'./' + entry];
 	}
-
+ console.log(entries)
 	return entries;
 
 }
