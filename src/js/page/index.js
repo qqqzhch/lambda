@@ -13,12 +13,27 @@ require("../../js/components/header.js");
 require("../../js/components/cookie.js");
 require('jquery-countdown');
 
+var queryString=require('query-string');
+// import queryString from 'query-string'
+
 $(document).ready(function(){
 	// 增加事件
 	//倒计时
 	// $('#getting-started').countdown('2018/06/30', function(event) {
 	// 	$(this).html('<p>'+event.strftime('%n')+'</p>:'+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
 	// });
+	const parsed = queryString.parse(location.search);
+	var from=parsed.from;
+	//#tokenregister
+	//#tokenwhitelist
+	 console.log('from')
+	if(from){
+		$('#tokenregister').attr('href','https://token.lambda.im/index.html?from'+from+'#/register')
+		$('#tokenwhitelist').attr('href','https://token.lambda.im/index.html?from'+from+'#/register')
+
+	}
+
+
 	$('.line').css('width',window.screen.width);
 
 	$('.principle .item').on('click',function(){
