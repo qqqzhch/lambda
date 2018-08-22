@@ -6,13 +6,13 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>http://blog.lambda.im/</loc>
+        <loc>https://blog.lambda.im/</loc>
      	<lastmod>2018-08-17T00:02:16+08:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
      <url>
-        <loc>http://lambda.im/</loc>
+        <loc>https://www.lambda.im/</loc>
      	<lastmod>2018-08-17T00:05:16+08:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>

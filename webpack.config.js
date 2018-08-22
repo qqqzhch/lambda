@@ -49,7 +49,7 @@ var config = {
 	output: {
 		path: path.join(__dirname,'dist'),//生成文件的根目录
 		publicPath: settings.publicPath,//针对浏览器的路径，开发环境和生产环境不一样
-		filename: 'js/[name].js',
+		filename: 'js/[name][hash].js',
 		chunkFilename: 'js/[id][chunkhash].chunk.js'
 	},
 	module: {
@@ -100,7 +100,7 @@ var config = {
 			chunks: chunks,
 			minChunks: chunks.length
 		}),
-		new ExtractTextPlugin('css/[name].css'),
+		new ExtractTextPlugin('css/[name][hash].css'),
 		// debug ? function() {} : new UglifyJsPlugin({
 		// 	compress: {
 		// 		warnings: false
