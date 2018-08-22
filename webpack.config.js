@@ -84,7 +84,10 @@ var config = {
       test: /\.js$/,
       	// exclude: /(node_modules|bower_components)/,
       	loader: 'babel-loader',
-    }
+    	},{
+				test: /\.md$/,
+				loaders: ['ejs-loader','markdown-loader'],
+			}
 		]
 	},
 	resolve: {
@@ -205,7 +208,7 @@ function getEntry(globPath,pathDir){
 
 		entries[pathname] = ["babel-polyfill",'./' + entry];
 	}
- console.log(entries)
+
 	return entries;
 
 }

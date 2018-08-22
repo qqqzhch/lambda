@@ -19,15 +19,5 @@ $(document).ready(function(){
 	// $('#getting-started').countdown('2018/08/20', function(event) {
 	// 	$(this).html('<p>'+event.strftime('%n')+'</p>  '+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
 	// });
-	$('.line').css('width',window.screen.width);
-	$('.scene .item').on('click',function(){
-		$(this).addClass('active').siblings().removeClass('active');
-		var _index = $(this).index()-1;
-		$('.scene .tab-contents p').eq(_index).addClass('contents-active').siblings().removeClass('contents-active');
-	})
-	$('.principle .item').on('click',function(){
-		$(this).addClass('active').siblings().removeClass('active');
-		var _index = $(this).index()-1;
-		$('.principle .tab-contents div').eq(_index).addClass('contents-active').siblings().removeClass('contents-active');
-	})
+
 });

@@ -26,10 +26,10 @@ $(document).ready(function(){
 	var from=parsed.from;
 	//#tokenregister
 	//#tokenwhitelist
-	 console.log('from')
+	 
 	if(from){
-		$('#tokenregister').attr('href','https://token.lambda.im/index.html?from'+from+'#/register')
-		$('#tokenwhitelist').attr('href','https://token.lambda.im/index.html?from'+from+'#/register')
+		$('#tokenregister').attr('href','https://token.lambda.im/index.html?from='+from+'#/register')
+		$('#tokenwhitelist').attr('href','https://token.lambda.im/index.html?from='+from+'#/register')
 
 	}
 
