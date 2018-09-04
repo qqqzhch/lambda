@@ -5,6 +5,7 @@
   "scripts": {
     "test": "null",
     "dev": "rm -rf dist/  && webpack && webpack-dev-server",
+    "win": "rm -rf dist/  && webpack --config webpack.win.config.js && webpack-dev-server",
     "build": "rm -rf dist/  && env ENV=production  webpack -p"
   },
   "author": "lambda-fed",
