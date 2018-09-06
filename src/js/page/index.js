@@ -54,7 +54,7 @@ $(document).ready(function(){
 		},
 		loop: true,
 		autoplay:true,
-		speed: 1000,
+		speed: 3000,
 		// navigation: {
     //   nextEl: '.swiper-button-next',
     //   prevEl: '.swiper-button-prev',
