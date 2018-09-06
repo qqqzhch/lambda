@@ -98,41 +98,6 @@ section.banner-contents {
       rgba(0, 183, 255, 1)
     );
   }
-  .crowd {
-    text-align: center;
-    .countdown-top {
-      font-size: 24px;
-      line-height: 36px;
-      background-image: -webkit-gradient(
-        linear,
-        0 0,
-        right bottom,
-        from(rgba(61, 221, 209, 1)),
-        to(rgba(0, 183, 255, 1))
-      );
-      .background-clip(text);
-      -webkit-text-fill-color: transparent;
-    }
-    .countdown {
-      font-size: 48px;
-      text-align: center;
-      margin: 27px 0;
-      p {
-        font-family: DINCondensed-Bold, DINCondensedBold;
-        display: inline-block;
-        width: 80px;
-        height: 200px;
-        font-size: 70px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 40px;
-        line-height: 200px;
-        margin: 0;
-      }
-    }
-    .countdown-bottom {
-      font-size: 14px;
-    }
-  }
 }
 
 .firstbgimg {
@@ -140,8 +105,7 @@ section.banner-contents {
     position: relative;
     width: 100%;
     .item {
-      padding: 0 5vw;
-      min-height: 450px;
+      position: relative;
     }
     .my-bullet {
       width: 15px;
@@ -163,7 +127,6 @@ section.banner-contents {
     }
   }
 }
-
 section.principle {
   .work-img {
     width: 130px;
@@ -172,7 +135,25 @@ section.principle {
     padding: 0 20px;
   }
 }
-
+section.demo{
+  h3{
+    color: #ffffff;
+  }
+  p{
+    color: #ffffff;
+  }
+  .btn {
+    margin-top: 21px;
+    display: inline-block;
+    color: #fff;
+    padding: 9px 32px 11px;
+    background: linear-gradient(
+      174.6deg,
+      rgba(61, 221, 209, 1),
+      rgba(0, 183, 255, 1)
+    );
+  }
+}
 section.scene {
   .wrapper {
     margin-top: 60px;
@@ -642,7 +623,18 @@ section.partners {
   .swiper-container{
     min-height: 450px;
   }
-
+}
+@media (min-width: 918px) and (max-width: 1441px){
+  .item2 {
+    position: relative;
+    padding: 0 5vw;
+    min-height: 450px;
+    .logo-container{
+      position: absolute;
+      left: 53%;
+      top: 2%;
+    }
+  }
 }
 @media (min-width: 480px) and (max-width: 1085px) {
 	header {
@@ -653,6 +645,22 @@ section.partners {
       .navbar-toggle-btn {
 				display: block;
 			}
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 918px){
+  .item2{
+    .logo-container{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      img{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+      }
     }
   }
 }
