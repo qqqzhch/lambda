@@ -53,8 +53,10 @@ $(document).ready(function(){
 			bulletActiveClass: 'my-bullet-active',
 		},
 		loop: true,
-		autoplay:true,
-		speed: 1000,
+		autoplay:{
+			disableOnInteraction: true,
+		},
+		speed: 4000,
 		// navigation: {
     //   nextEl: '.swiper-button-next',
     //   prevEl: '.swiper-button-prev',
