@@ -134,7 +134,7 @@ var config = {
 	],
 	devServer: {
 		contentBase: './dist/',
-		host: '0.0.0.0',
+		host: '172.16.0.233',
 		port: 9090,
 		inline: true,
 		hot: true,

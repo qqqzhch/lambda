@@ -1,6 +1,4 @@
-
 const layout = require('./html.ejs');
-
 const header = require('./../partial/header.ejs');
 const footer = require('./../partial/footer.ejs');
 
