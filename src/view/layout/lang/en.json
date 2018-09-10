@@ -1,9 +1,169 @@
 {
-	"head": {
+  "head": {
 		"menu1": "APPLICATION SCENARIOS",
-		"menu2": "WORKING PRINCIPLE"
+    "menu2": "WORKING PRINCIPLE",
+    "menu3": "ECOSYSTEM",
+    "menu4": "TOKEN DISTRIBUTION",
+    "menu5": "ROADMAP",
+    "menu6": "REGISTER/SIGN UP"
 	},
 	"foot":{
-
-	}
+    "menu1": "APPLICATION SCENARIOS",
+    "menu2": "WORKING PRINCIPLE",
+    "menu3": "ECOSYSTEM",
+    "menu4": "TOKEN DISTRIBUTION",
+    "menu5": "ROADMAP",
+    "menu6": "Blog",
+    "menu7":"Contact us"
+	},
+  "section1": {
+    "slide1": {
+      "title1": "A Disruptor in Blockchain-Based Storage Solution",
+      "title2": "Providing Unlimited Storage Capabilities",
+      "introduce": "Lambda is a fast, safe, and scalable blockchain infrastructure project, which provides decentralized applications (DAPPs) data storage capabilities with unlimited scalability and fulfills services such as multi-chain data co-storage, cross-chain data management, data privacy protection, PDP, and distributed intelligent computing through logic decoupling and independent implementation of Lambda Chain and Lambda DB",
+      "btnName":"Download whitepaper"
+    },
+    "slide2":{
+      "title1": "One Small Step for Lambda",
+      "title2": "one Giant Leap for the Future",
+      "title3":"Information flow driven by finance",
+      "introduce": "Know more about design principles of Lambda’s Economic System",
+      "btnName":"Economic whitepaper"
+    }
+  },
+  "section2":{
+    "title":"Lambda Provable Data Possession Demo",
+    "introduce":"We believe that all storage projects follow the core requirement of Provable Data Integrity.Also, it is crucial for data projects to store data in an infeasible storage node and make them trusted and secure, in the academic world, there are mainly two approaches which are Provable Data Possession (PDP) and Proofs of Retrievability (POR) depending on the usage scenarios. Lambda has applied these two approaches in blockchain through academic research and engineering verification, which has eliminated the core obstacles of decentralized storage.  ",
+    "btnName":"Download Demo"
+  },
+  "section3":{
+    "title":"APPLICATION SCENARIOS",
+    "item1":{
+      "title":"Trusted and secure data storage",
+      "introduce":"Data development and sharing is the driving force for the development of the data industry and the oil and power source of the future world. Nowadays, the data is stored in a unilateral private data center, where the model obtained and analyzed by the demand side has been proved to have big drawbacks, lack of transactional transparency and without guaranteed data ownership and control right.Our ultimate idea is to promote data sharing and achieve common benefit by the distinct QoS storage of all types of data that can be validated publicly and validated anonymously through the Lambda that can be notarized and trusted."
+    },
+    "item2":{
+      "title":"Public data access and transaction",
+      "introduce":"At present, many data are owned by all human beings, thereby needing a data infrastructure to enable such shared data access and transaction as medical, education, transportation, energy, agriculture, weather, hydrology, infrastructure, scientific research, public safety data etc.These public data, which are common to all humans, can be distributed, verifiable, stored, analyzed, traded, and used on the Lambda platform."
+    },
+    "item3":{
+      "title":"Access control and protection of personal privacy data",
+      "introduce":"The advent of the era of big data brings about tremendous challenges to the ownership of personal privacy data. Usually, data collectors have unlimited right to interpret and use data.  With the implementation of GDPR and other bills, the contradiction between data privacy among individuals, enterprises and governments is becoming more acute. Lambda provides reliable, secure and privacy-protected data storage and access capability by means of differential privacy, data encryption and signing, identity authentication and access control, and encrypted transmission."
+    },
+    "item4":{
+      "title":"DApp and Blockchain",
+      "introduce":"So far, many decentralized application projects face the risk of failing to implement, one of the main causes being the shortage of data storage infrastructures.In fact, the essence of an application, centralized or decentralized, is the implementation of business logic, interface display, and user interaction around data access.  Therefore, data infrastructure is the core issue of blockchain and decentralized applications. Currently, blockchain ledgers are not suitable for business data storage, IPFS cannot store formatted program access data.While Lambda project provides infinitely scalable decentralized data collection, storage, and access capabilities through elegant chain library decoupling, isomorphic function subchain design, and publicly verifiable data ownership proofs."
+    },
+    "item5":{
+      "title":"IoT data storage",
+      "introduce":"The IoT data are massive, time-series, and simple structured, whose generation process can ensure the authenticity of the data. The IoT data occupy a large amount of storage space, and the value of individual data is small.It needs a lasting work and substantial storage and computing resources to extract value from the data.Lambda's digital currency can measure the value of small data, motivating people to share and contribute computing storage resources to obtain token incentives.Lambda provides a system of data collection, data transmission, data storage, data computing and data transaction in the field of IoT.With this system, data collected by sensors such as satellite remote sensing data, hydrological data and atmospheric data can be calculated in different dimensions and sold to anyone and institutions that need it through smart contracts."
+    },
+    "item6":{
+      "title":"Artificial intelligence data",
+      "introduce":"In the field of artificial intelligence, the current consensus is that the role of data is many times larger than that of the model.However, the acquisition of metadata is a difficult and expensive issue.The shortage of data hinders the development of the artificial intelligence industry. At present, because of lack of trust, data abuse and other reasons, individuals are unwilling to contribute data, and business organizations that have need obtain data through unconventional means.Lambda will eventually form an integrated network of huge data storage space, and data owners can sell their data through smart contracts on Lambda's trading platform.In particular, the value of time-series data lies in the insights after the analysis.Data owners do not need to sell the original data, but only sell the analysis results of the data, and even the insights on the results of the data analysis."
+    }
+  },
+  "section4":{
+    "title":"ARCHITECTURE DESIGN",
+    "item1":{
+      "title":"Lambda Chain",
+      "introduce":"An isomorphic multi-chain system Lambda Chain, providing high TPS access capabilities, Turing-complete smart contracts, cross-chain trading capabilities, etc."
+    },
+    "item2":{
+      "title":"Lambda DB Infrastructure",
+      "introduce":"A Lambda DB underlying infrastructure supporting system, including a block storage system and a distributed file system Lambda FS"
+    },
+    "item3":{
+      "title":"Lambda TPA",
+      "introduce":"A data integrity verification group consisting of multiple verifier nodes Lambda TPA Chain"
+    },
+    "item4":{
+      "title":"Lambda Agent",
+      "introduce":"An adaptive probe system Lambda Agent, providing memory data storage, performance monitoring, security monitoring and Metrics data uploading capabilities"
+    },
+    "item5":{
+      "title":"Lambda ABE",
+      "introduce":"An attribute-based encryption authentication access system composed of multi-node consensus Lambda ABE, the access control gateways to databases"
+    },
+    "item6":{
+      "title":"Lambda P2P",
+      "introduce":"A p2p network system Lambda p2p, providing network layer addressability"
+    },
+    "item7":{
+      "title":"Lambda DB",
+      "introduce":"A multi-database cluster system Lambda DB, providing unlimited encrypted secure data storage "
+    }
+  },
+  "section5":{
+    "title":"WORKING PRINCIPLE",
+    "item1":{
+      "title":"Isomorphic Multi-Chain",
+      "introduce":"Lambda chain itself is a kind of isomorphic multi-chain design, respectively are MainChain, WorkChain and ShardChain. With the exception of MainChain, all other WorkChains are composed of multiple ShardChains.Among them, the consensus mechanism of MainChainNominated is Proof-of-Stake NPos, and the consensus mechanism of ShardChain is HoneyBadgerBFT. MainChain is the main chain and relay chain of all chains and has all nodes, including nominator nodes, validation nodes, and fisherman nodes."
+    },
+    "item2":{
+      "title":"Sharding ",
+      "introduce":"Any WorkChain is assigned by MainChain as the validation node responsible for the packaging and blocking of transactions.While sharding's mechanism is accomplished through a BFT consensus after grouping validation nodes. In order to implement the management of the database system, the Lambda team has implemented the first three sub-chains, namely, WorkChain1 that authorizes, records, and forwards data requests, WorkChain2 that performs statistics on data response conditions and conduct consensus management on database nodes and WorkChain3 that verifies data integrity. In the future, Lambda can achieve more functions by adding more sub-chains."
+    },
+    "item3":{
+      "title":"Data Ownership Proof",
+      "introduce":"Decentralized cloud storage and cloud databases, compared to centralized clouds, the biggest difference lies in Permissionless storage nodes, and cloud users cannot be certifying initiators or fully trusted TPA nodes. In Lambda's design, we adopted two upgraded versions of the publicly-authenticated PDP method, BLS-PDP and MF-PDP. We will jointly complete the work of single point trusted TPA through the multiple validation nodes consensus, that is to complete the data's ownership and integrity validation, and write the validation results to the chain for FisherMan's inspection."
+    },
+    "item4":{
+      "title":"Access control and encryption ",
+      "introduce":"The data on the blockchain are publicly accessible, which greatly limits the data application scenario.  In order to expand, Lambda provides an access control program based on multi-authority organization attribute-based encryption, and data encryption capability, and the ability to revoke attribute through proxy encryption. The ABE attribute-based encryption program in Lambda can flexibly implement access control policies, which can greatly reduce network and user-end computing overheads, and simultaneously can resist single-authority organization to obtain user's identity information thereby ensuring the privacy of user identity."
+    }
+  },
+  "section6":{
+    "title":"ECOSYSTEM",
+    "introduce":"Unlike other blockchains, Lambda is a blockchain data storage infrastructure. The roles of this ecosystem are DAPP developers and project parties, chain node participants, storage node participants and other participants, in which chain node participants include nominees, validators and fishermen. Lambda provides storage, computing, transaction, and other service capabilities.  Therefore, roles encompassing resource providers, task creators for submitting data storage and computation tasks, software developers, and data analysts also involve and comprise Lambda's interdependent ecosystem."
+  },
+  "section7":{
+    "title":"Token Distrubution"
+  },
+  "section8":{
+    "title":"Roadmap",
+    "item1":{
+      "title":"Phase I Lambda Technological Demonstration and Research ",
+      "introduce1":"To make deep research on the technical framework of each public blockchain and protocol layer, and the core team has read a large number of codes and papers (see appendix)",
+      "introduce2":"To demonstrate the computing and storage mock-up for massive data under Permissionless environment",
+      "introduce3":"To demonstrate the combination of OAS business model and Token economy "
+    },
+    "item2":{
+      "title":"Phase II Lambda Technological Demonstration and Research ",
+      "introduce1":"To choose the appropriate blockchain consensus mechanism and determine the high-speed chain design using the Sharding scheme as well as the HoneyBadgerBFT consensus algorithm for subchains",
+      "introduce2":"To determine multi-subchain design for keeping accounts respectively with Request and Reponse.",
+      "introduce3":"To complete structural design for the separation of chains from libraries ",
+      "introduce4":"To determine provable data possession (PDP) and the access control and encryption mechanism for ABE",
+      "introduce5":"To determine the technical route and the technical scheme",
+      "introduce6":"To complete technical white paper "
+    },
+    "item3":{
+      "title":"Phase III Lambda Core Component Development",
+      "introduce1":"To carry out evaluation test on the performance of libp2p and devp2p and modify codes ",
+      "introduce2":"To implement the underlying chunk storage system",
+      "introduce3":"To implement the closed-source development of Lambda Chain",
+      "introduce4":"To carry out technical verification on Lambda FS",
+      "introduce5":"To carry out community development on Lambda FS and open source in real time",
+      "introduce6":"To implement the Lambda database based on Lambda FS",
+      "introduce7":"To develop Lambda Agent based on hotspot languages to facilitate integration with the existing applications. "
+      
+    },
+    "item4":{
+      "title":"Phase IV Lambda Chain Test Network Development ",
+      "introduce1":"P2P network development is used to synchronize blockchain ledgers and store data synchronously. Development of virtual machine and development and verification of built-in contracts",
+      "introduce2":"API interface, RPC interface, command line and development of peripheral tools",
+      "introduce3":"Open source Lambda Chain "
+    },
+    "item5":{
+      "title":"Phase V Test Network Construction and Development of Lambda-based Example",
+      "introduce1":"To construct a large-scale test network based on the community for all-round testing.",
+      "introduce2":"To issue LAMBs for encouraging early community enthusiasts to develop Lambda-based application examples",
+      "introduce3":"To carry out rewarding test and amendment on security and service vulnerability on application examples based on test networks."
+    },
+    "item6":{
+      "title":"Phase VI Expansion of other data service capabilities and data transactions ",
+      "introduce1":"It will be launched by the Foundation for encouraging more database types and service capabilities to access Lambda ecology ",
+      "introduce2":"To explore data transaction capability based on Lambda ecolog"
+    }
+  }
 }
