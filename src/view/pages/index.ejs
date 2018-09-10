@@ -179,7 +179,7 @@
 
 	<section id="design" class="use design">
 		<div class="container">
-			<h1>ARCHITECTURE DESIGN</h1>
+			<h1><%=lang.section4.title%></h1>
 			<!-- <span>ARCHITECTURE DESIGN</span> -->
 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
@@ -188,50 +188,42 @@
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda Chain</p>
-						<p class="intro">An isomorphic multi-chain system Lambda Chain, providing high TPS access capabilities,
-							Turing-complete
-							smart contracts, cross-chain trading capabilities, etc.</p>
+						<p class="title"><%=lang.section4.item1.title%></p>
+						<p class="intro"><%=lang.section4.item1.introduce%></p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda P2P</p>
-						<p class="intro">A p2p network system Lambda p2p, providing network layer addressability</p>
+						<p class="title"><%=lang.section4.item2.title%></p>
+						<p class="intro"><%=lang.section4.item2.introduce%></p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda DB</p>
-						<p class="intro">A multi-database cluster system Lambda DB, providing unlimited encrypted secure data storage</p>
+						<p class="title"><%=lang.section4.item3.title%></p>
+						<p class="intro"><%=lang.section4.item3.introduce%></p>
 					</div>
 				</div>
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda DB Infrastructure</p>
-						<p class="intro">A Lambda DB underlying infrastructure supporting system, including a block storage system and a
-							distributed
-							file system Lambda FS</p>
+						<p class="title"><%=lang.section4.item4.title%></p>
+						<p class="intro"><%=lang.section4.item4.introduce%></p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda ABE</p>
-						<p class="intro">An attribute-based encryption authentication access system composed of multi-node consensus
-							Lambda
-							ABE, the access control gateways to databases</p>
+						<p class="title"><%=lang.section4.item5.title%></p>
+						<p class="intro"><%=lang.section4.item5.introduce%></p>
 					</div>
 				</div>
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda TPA</p>
-						<p class="intro">A data integrity verification group consisting of multiple verifier nodes Lambda TPA Chain</p>
+						<p class="title"><%=lang.section4.item6.title%></p>
+						<p class="intro"><%=lang.section4.item6.introduce%></p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title">Lambda Agent</p>
-						<p class="intro">An adaptive probe system Lambda Agent, providing memory data storage, performance monitoring,
-							security
-							monitoring and Metrics data uploading capabilities</p>
+						<p class="title"><%=lang.section4.item7.title%></p>
+						<p class="intro"><%=lang.section4.item7.introduce%></p>
 					</div>
 				</div>
 			</div>
@@ -240,7 +232,7 @@
 
 	<section id="principle" class="use principle">
 		<div class="container">
-			<h1>WORKING PRINCIPLE</h1>
+			<h1><%=lang.section5.title%></h1>
 			<!-- <span>WORKING PRINCIPLE</span> -->
 			<div class="row">
 				<div class="col-xs-12 ">
@@ -250,25 +242,25 @@
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p>Isomorphic Multi-Chain</p>
+							<p><%=lang.section5.item1.title%></p>
 						</div>
 						<div class="item col-md-1 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p>Sharding</p>
+							<p><%=lang.section5.item2.title%></p>
 						</div>
 						<div class="item col-md-2 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p>Data Ownership Proof</p>
+							<p><%=lang.section5.item3.title%></p>
 						</div>
 						<div class="item col-md-2 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p>Access control and encryption </p>
+							<p><%=lang.section5.item4.title%></p>
 						</div>
 					</div>
 				</div>
@@ -278,57 +270,19 @@
 					<div class="tab-contents">
 						<div class="contents-active">
 							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-1.png') %>" >
-							<p class="work-intro" style="opacity:0.8">Lambda chain itself is a kind of isomorphic multi-chain design,
-								respectively
-								are MainChain, WorkChain and ShardChain. With the exception of MainChain, all other WorkChains are composed of
-								multiple
-								ShardChains. Among them, the consensus mechanism of MainChainNominated is Proof-of-Stake NPos, and the
-								consensus
-								mechanism of ShardChain is HoneyBadgerBFT. MainChain is the main chain and relay chain of all chains and has
-								all
-								nodes, including nominator nodes, validation nodes, and fisherman nodes.</p>
+							<p class="work-intro" style="opacity:0.8"><%=lang.section5.item1.introduce%></p>
 						</div>
 						<div>
 							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-2.png') %>" >
-							<p class="work-intro">Any WorkChain is assigned by MainChain as the validation node responsible for the
-								packaging
-								and blocking of transactions. While sharding's mechanism is accomplished through a BFT consensus after grouping
-								validation
-								nodes. In order to implement the management of the database system, the Lambda team has implemented the first
-								three
-								sub-chains, namely, WorkChain1 that authorizes, records, and forwards data requests, WorkChain2 that performs
-								statistics
-								on data response conditions and conduct consensus management on database nodes and WorkChain3 that verifies
-								data
-								integrity. In the future, Lambda can achieve more functions by adding more sub-chains.</p>
+							<p class="work-intro"><%=lang.section5.item2.introduce%></p>
 						</div>
 						<div>
 							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-3.png') %>" >
-							<p class="work-intro">Decentralized cloud storage and cloud databases, compared to centralized clouds, the
-								biggest
-								difference lies in Permissionless storage nodes, and cloud users cannot be certifying initiators or fully
-								trusted
-								TPA nodes. In Lambda's design, we adopted two upgraded versions of the publicly-authenticated PDP method,
-								BLS-PDP
-								and MF-PDP. We will jointly complete the work of single point trusted TPA through the multiple validation nodes
-								consensus,
-								that is to complete the data's ownership and integrity validation, and write the validation results to the
-								chain
-								for FisherMan's inspection.</p>
+							<p class="work-intro"><%=lang.section5.item3.introduce%></p>
 						</div>
 						<div>
 							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-4.png') %>" >
-							<p class="work-intro">The data on the blockchain are publicly accessible, which greatly limits the data
-								application
-								scenario. In order to expand, Lambda provides an access control program based on multi-authority organization
-								attribute-based
-								encryption, and data encryption capability, and the ability to revoke attribute through proxy encryption. The
-								ABE
-								attribute-based encryption program in Lambda can flexibly implement access control policies, which can greatly
-								reduce
-								network and user-end computing overheads, and simultaneously can resist single-authority organization to obtain
-								user's
-								identity information thereby ensuring the privacy of user identity.</p>
+							<p class="work-intro"><%=lang.section5.item4.introduce%></p>
 						</div>
 					</div>
 				</div>
