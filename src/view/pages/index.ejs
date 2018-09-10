@@ -7,19 +7,12 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="item col-md-12">
-							<h2 style="margin-bottom: 30px;font-size: 29px;"> <%=lang.section1.title1%></h2>
-							<h3 style="margin-bottom: 30px;font-size: 26px;"><%=lang.section1.title2%></h3>
+							<h2 style="margin-bottom: 30px;font-size: 29px;"><%=lang.section1.slide1.title1%></h2>
+							<h3 style="margin-bottom: 30px;font-size: 26px;"><%=lang.section1.slide1.title2%></h3>
 							<p style="opacity:0.8;font-size:14px;text-align: left;">
-								Lambda is a fast, safe, and scalable blockchain infrastructure project, which provides decentralized
-								applications (DAPPs)
-								data storage capabilities with unlimited scalability and fulfills services such as multi-chain data co-storage,
-								cross-chain
-								data management, data privacy protection, PDP, and distributed intelligent computing through logic decoupling
-								and
-								independent implementation of Lambda Chain and Lambda DB
+								<%=lang.section1.slide1.introduce%>
 							</p>
-							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf" target="_blank">Download
-								whitepaper</a>
+							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf" target="_blank"><%=lang.section1.slide1.btnName%></a>
 							<div class="contact">
 								<ul>
 									<li>
@@ -61,19 +54,18 @@
 					</div>
 					<div class="swiper-slide">
 						<div class="item2 col-md-12">
-							<h2 style="margin-bottom: 30px;font-size: 29px;"> One Small Step for Lambda </h2>
-							<h2 style="margin-bottom: 30px;font-size: 29px;">one Giant Leap for the Future</h2>
-							<h3 style="margin-bottom: 30px;font-size: 26px;">Information flow driven by finance</h3>
+							<h2 style="margin-bottom: 30px;font-size: 29px;"> <%=lang.section1.slide2.title1%></h2>
+							<h2 style="margin-bottom: 30px;font-size: 29px;"><%=lang.section1.slide2.title2%></h2>
+							<h3 style="margin-bottom: 30px;font-size: 26px;"><%=lang.section1.slide2.title3%></h3>
 							<p style="opacity:0.8;font-size:14px;text-align: left;width: 90%">
-								Know more about design principles of Lambda’s Economic System
+								<%=lang.section1.slide2.introduce%>
 							</p>
 							<div class="logo-container">
 								<a href="">
 									<img src="<%= require('../../img/index/fimg2.png') %>" alt="lambda">
 								</a>
 							</div>
-							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf" target="_blank">Economic
-								WhitePaper</a>
+							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf" target="_blank"><%=lang.section1.slide2.btnName%></a>
 							<div class="contact">
 								<ul>
 									<li>
@@ -120,24 +112,16 @@
 
 	<section id="demo" class="use demo">
 		<div class="container">
-			<h1>Lambda Provable Data Possession Demo</h1>
+			<h1><%=lang.section2.title%></h1>
 			<div class="crowd col-md-12" style="text-align: left">
 				<p style="opacity:0.8;font-size:14px;text-align: left;    width: 90%">
-					We believe that all storage projects follow the core requirement of Provable Data Integrity. Also, it is crucial
-					for data
-					projects to store data in an infeasible storage node and make them trusted and secure, in the academic world,
-					there are
-					mainly two approaches which are Provable Data Possession (PDP) and Proofs of Retrievability (POR) depending on the
-					usage
-					scenarios. Lambda has applied these two approaches in blockchain through academic research and engineering
-					verification,
-					which has eliminated the core obstacles of decentralized storage.
+					<%=lang.section2.introduce%>
 				</p>
 				<div class="col-xs-12">
-					<img width="50%" alt="demo pdp" src="<%= require('../../img/demo/pdp.jpg') %>" alt="">
+					<img width="50%" alt="demo pdp" src="<%= require('../../img/demo/pdp.jpg') %>" >
 				</div>
 				<p style="opacity:0.8;font-size:14px;text-align: left;    width: 90%">
-					<a style="padding: 6px" class="btn sendBtn" href="https://github.com/LambdaIM/demo" target="_blank">Download Demo</a>
+					<a style="padding: 6px" class="btn sendBtn" href="https://github.com/LambdaIM/demo" target="_blank"><%=lang.section2.btnName%></a>
 				</p>
 			</div>
 		</div>
@@ -145,30 +129,20 @@
 
 	<section id="scene" class="scene use">
 		<div class="container">
-			<h1>APPLICATION SCENARIOS</h1>
+			<h1><%=lang.section3.title%></h1>
 			<div class="row wrapper">
 				<div class=" scene-item col-lg-w-30 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="APPLICATION SCENARIOS" src="<%= require('../../img/index/scene-log1.png') %>" alt="">
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log1.png') %>" >
 					</div>
-					<h2 class="title">Trusted and secure data storage</h2>
-					<p class="intro">Data development and sharing is the driving force for the development of the data industry and
-						the
-						oil and power source of the future world. Nowadays, the data is stored in a unilateral private data center, where
-						the
-						model obtained and analyzed by the demand side has been proved to have big drawbacks, lack of transactional
-						transparency
-						and without guaranteed data ownership and control right. Our ultimate idea is to promote data sharing and achieve
-						common
-						benefit by the distinct QoS storage of all types of data that can be validated publicly and validated anonymously
-						through
-						the Lambda that can be notarized and trusted.</p>
+					<h2 class="title"><%=lang.section3.item1.title%></h2>
+					<p class="intro"><%=lang.section3.item1.introduce%></p>
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="APPLICATION SCENARIOS" src="<%= require('../../img/index/scene-log2.png') %>" alt="">
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log2.png') %>" >
 					</div>
-					<h2 class="title">Public data access and transaction</h2>
+					<h2 class="title"><%=lang.section3.item1.title%></h2>
 					<p class="intro">At present, many data are owned by all human beings, thereby needing a data infrastructure to
 						enable
 						such shared data access and transaction as medical, education, transportation, energy, agriculture, weather,
@@ -179,7 +153,7 @@
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="APPLICATION SCENARIOS" src="<%= require('../../img/index/scene-log3.png') %>" alt="">
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log3.png') %>" >
 					</div>
 					<h2 class="title">Access control and protection of personal privacy data</h2>
 					<p class="intro">The advent of the era of big data brings about tremendous challenges to the ownership of personal
@@ -194,7 +168,7 @@
 				</div>
 				<div class="scene-item col-lg-w-30 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="APPLICATION SCENARIOS" src="<%= require('../../img/index/scene-log4.png') %>" alt="">
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log4.png') %>" >
 					</div>
 					<h2 class="title">DApp and Blockchain</h2>
 					<p class="intro">So far, many decentralized application projects face the risk of failing to implement, one of the
@@ -213,7 +187,7 @@
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="APPLICATION SCENARIOS" class="car" src="<%= require('../../img/index/scene-log5.png') %>" alt="">
+						<img alt="<%=lang.section3.title%>" class="car" src="<%= require('../../img/index/scene-log5.png') %>" >
 					</div>
 					<h2 class="title">IoT data storage</h2>
 					<p class="intro">The IoT data are massive, time-series, and simple structured, whose generation process can ensure
@@ -234,7 +208,7 @@
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="APPLICATION SCENARIOS" src="<%= require('../../img/index/scene-log6.png') %>" alt="">
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log6.png') %>" >
 					</div>
 					<h2 class="title">Artificial intelligence data</h2>
 					<p class="intro">In the field of artificial intelligence, the current consensus is that the role of data is many
@@ -263,7 +237,7 @@
 			<!-- <span>ARCHITECTURE DESIGN</span> -->
 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
-					<img alt="APPLICATION SCENARIOS" src="<%= require('../../img/index/design.png') %>" alt="">
+					<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/design.png') %>" >
 				</div>
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
@@ -357,7 +331,7 @@
 				<div class="col-lg-8 col-md-10">
 					<div class="tab-contents">
 						<div class="contents-active">
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-1.png') %>" alt="">
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-1.png') %>" >
 							<p class="work-intro" style="opacity:0.8">Lambda chain itself is a kind of isomorphic multi-chain design,
 								respectively
 								are MainChain, WorkChain and ShardChain. With the exception of MainChain, all other WorkChains are composed of
@@ -369,7 +343,7 @@
 								nodes, including nominator nodes, validation nodes, and fisherman nodes.</p>
 						</div>
 						<div>
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-2.png') %>" alt="">
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-2.png') %>" >
 							<p class="work-intro">Any WorkChain is assigned by MainChain as the validation node responsible for the
 								packaging
 								and blocking of transactions. While sharding's mechanism is accomplished through a BFT consensus after grouping
@@ -383,7 +357,7 @@
 								integrity. In the future, Lambda can achieve more functions by adding more sub-chains.</p>
 						</div>
 						<div>
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-3.png') %>" alt="">
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-3.png') %>" >
 							<p class="work-intro">Decentralized cloud storage and cloud databases, compared to centralized clouds, the
 								biggest
 								difference lies in Permissionless storage nodes, and cloud users cannot be certifying initiators or fully
@@ -397,7 +371,7 @@
 								for FisherMan's inspection.</p>
 						</div>
 						<div>
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-4.png') %>" alt="">
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-4.png') %>" >
 							<p class="work-intro">The data on the blockchain are publicly accessible, which greatly limits the data
 								application
 								scenario. In order to expand, Lambda provides an access control program based on multi-authority organization
@@ -422,7 +396,7 @@
 			<!-- <span>ECOSYSTEM</span> -->
 			<div class="row">
 				<div class="col-xs-12">
-					<img alt="ECOSYSTEM" src="<%= require('../../img/index/Group2x.png') %>" alt="">
+					<img alt="ECOSYSTEM" src="<%= require('../../img/index/Group2x.png') %>" >
 				</div>
 				<div class="col-md-offset-1 col-md-10 col-sm-12 col-xxs-12">
 					<p style="text-align:center;opacity:0.8">Unlike other blockchains, Lambda is a blockchain data storage
@@ -447,7 +421,7 @@
 			<!-- <span>ECOSYSTEM</span> -->
 			<div class="row">
 				<div class="col-xs-12">
-					<img alt="TOKEN DISTRIBUTION" src="<%= require('../../img/index/tokensale3.jpg') %>" alt="">
+					<img alt="TOKEN DISTRIBUTION" src="<%= require('../../img/index/tokensale3.jpg') %>" >
 				</div>
 				<!-- <div class="col-md-offset-1 col-md-10 col-sm-12 col-xxs-12">
 					<p style="text-align:center;opacity:0.8">SSS.</p>
@@ -617,7 +591,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/xiaoyang-he-0083b428/">
 								<img alt="He Xiaoyang" src="<%= require('../../img/index/hxy.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" alt="">
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
 
 							</a>
 						</div>
@@ -634,7 +608,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/monanli/">
 								<img alt="Li Monan" src="<%= require('../../img/index/lmn.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" alt="">
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
 							</a>
 						</div>
 						<p class="name">
@@ -648,7 +622,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/bingqing-he-119019b1/">
 								<img alt="He Bingqing" src="<%= require('../../img/index/hbq.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" alt="">
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
 							</a>
 						</div>
 						<p class="name">
@@ -663,7 +637,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/hongqiangguo/">
 								<img alt="Guo Hongqiang" src="<%= require('../../img/index/ghq.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" alt="">
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
 							</a>
 						</div>
 						<p class="name">
@@ -676,7 +650,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/%E6%B5%B7%E5%BC%BA-%E9%AB%98-187a60166/">
 								<img src="<%= require('../../img/index/gaohq.png') %>" alt="Gao Haiqiang">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" alt="">
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
 							</a>
 						</div>
 						<p class="name">
@@ -690,7 +664,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/haijun-zhao-0a76652b/">
 								<img src="<%= require('../../img/index/zhj.png') %>" alt="Zhao Haijun">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" alt="">
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
 							</a>
 						</div>
 						<p class="name">
@@ -727,6 +701,16 @@
 						<p class="name">Liu Chunhua</p>
 					</div>
 				</div>
+				
+				<div class="col-md-2 col-xxs-4 col-xxs-offset-0  col-md-offset-half col-lg-offset-half">
+					<div class="head">
+						<div class="head-wrapper">
+							<img src="<%= require('../../img/index/Lucien Chen.png') %>" alt="Lucien Chen">
+						</div>
+						<p class="name">Lucien Chen</p>
+					</div>
+				</div>
+
 				<div class="col-md-2 col-xxs-4 col-xxs-offset-0  col-md-offset-half col-lg-offset-half">
 					<div class="head">
 						<div class="head-wrapper">
