@@ -87,7 +87,11 @@ var config = {
     	},{
 				test: /\.md$/,
 				loaders: ['ejs-loader','markdown-loader'],
-			}
+			},
+			{
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
 		]
 	},
 	resolve: {

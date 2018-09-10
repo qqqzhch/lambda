@@ -1,12 +1,14 @@
 const layout = require('./html.ejs');
 const header = require('./../partial/header.ejs');
 const footer = require('./../partial/footer.ejs');
+const lang = require('./lang');
 
 const pf = {
 	pageTitle: '',
 	description: '',
 	keywords: '',
-	pageId: ''
+	pageId: '',
+	lang:lang()
 };
 
 
