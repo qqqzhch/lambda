@@ -4,9 +4,6 @@
 	<section class="banner-contents  firstbgimg">
 		<div class="container">
 			<div class="swiper-container">
-
-
-				
 				<div class="swiper-wrapper">
 					<div class="swiper-slide container">
 						<div class="col-md-12">
@@ -62,8 +59,9 @@
 					</div>
 					<div class="swiper-slide container">
 						<div class="col-md-12">
+							<% if(langType == 'en') {%>
 							<div>
-								<div class="col-md-8 col-sm-7">
+								<div class="col-sm-9 col-md-6 col-lg-6">
 									<h2 style="margin-bottom: 30px;font-size: 29px;">
 										<%=lang.section1.slide2.title1%>
 									</h2>
@@ -77,12 +75,35 @@
 										<%=lang.section1.slide2.introduce%>
 									</p>
 								</div>
-								<div class="col-md-4 col-sm-5 logo-container">
+								<div class="col-sm-2  col-md-5 col-lg-6 logo-container">
 									<a href="">
 										<img src="<%= require('../../img/index/fimg2.png') %>" alt="lambda">
 									</a>
 								</div>
 							</div>
+							<% } else if(langType == 'ru'){ %>
+							<div>
+								<div class="col-sm-9 col-md-8 col-lg-7">
+									<h2 style="margin-bottom: 30px;font-size: 29px;">
+										<%=lang.section1.slide2.title1%>
+									</h2>
+									<h2 style="margin-bottom: 30px;font-size: 29px;">
+										<%=lang.section1.slide2.title2%>
+									</h2>
+									<h3 style="margin-bottom: 30px;font-size: 22px;">
+										<%=lang.section1.slide2.title3%>
+									</h3>
+									<p style="opacity:0.8;font-size:14px;text-align: left;width: 90%">
+										<%=lang.section1.slide2.introduce%>
+									</p>
+								</div>
+								<div class="col-sm-2 col-md-4 col-lg-5 logo-container">
+									<a href="">
+										<img src="<%= require('../../img/index/fimg2.png') %>" alt="lambda">
+									</a>
+								</div>
+							</div>
+							<% } %>
 							<div class="col-md-12 col-sm-12">
 								<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf" target="_blank">
 									<%=lang.section1.slide2.btnName%></a>
@@ -127,9 +148,6 @@
 				</div>
 				<div class="swiper-pagination">
 				</div>
-
-
-
 			</div>
 		</div>
 	</section>
@@ -323,7 +341,7 @@
 				<div class="col-xs-12 ">
 					<div class="tab-btn">
 						<div class="line"></div>
-						<div class="item active col-md-1 col-sm-2 col-xxs-3">
+						<div class="item active col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
@@ -331,7 +349,7 @@
 								<%=lang.section5.item1.title%>
 							</p>
 						</div>
-						<div class="item col-md-1 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
+						<div class="item col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
@@ -339,7 +357,7 @@
 								<%=lang.section5.item2.title%>
 							</p>
 						</div>
-						<div class="item col-md-2 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
+						<div class="item col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
@@ -347,7 +365,7 @@
 								<%=lang.section5.item3.title%>
 							</p>
 						</div>
-						<div class="item col-md-2 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
+						<div class="item col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
