@@ -61,7 +61,7 @@ header {
 }
 section {
   h1 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 400;
   }
 }
@@ -103,9 +103,6 @@ section.banner-contents {
   .swiper-container {
     position: relative;
     width: 100%;
-    .item {
-      position: relative;
-    }
     .my-bullet {
       width: 15px;
       height: 15px;
@@ -570,6 +567,12 @@ section.partners {
       min-width: 120px;
     }
   }
+  .logo-container{
+    img{
+      width: 300px;
+      height: 250px;
+    }
+  }
 }
 @media (max-width: 991px) {
   .scene-item {
@@ -583,6 +586,12 @@ section.partners {
       .countdown-top {
         margin-top: 50px;
       }
+    }
+  }
+  .logo-container{
+    img{
+      width: 189px;
+      height: 200px;
     }
   }
 }
@@ -618,17 +627,6 @@ section.partners {
     min-height: 450px;
   }
 }
-@media (min-width: 1000px) and (max-width: 2570px){
-  .item2 {
-    position: relative;
-    min-height: 450px;
-    .logo-container{
-      position: absolute;
-      left: 45%;
-      top: 2%;
-    }
-  }
-}
 @media (min-width: 480px) and (max-width: 1085px) {
 	header {
     .nav {
@@ -638,22 +636,6 @@ section.partners {
       .navbar-toggle-btn {
 				display: block;
 			}
-    }
-  }
-}
-@media (min-width: 320px) and (max-width: 1000px){
-  .item2{
-    .logo-container{
-      position: relative;
-      width: 300px;
-      height: 300px;
-      img{
-        width: 250px;
-        height: 250px;
-        position: absolute;
-        left: 5%;
-        top: 5%;
-      }
     }
   }
 }
@@ -758,6 +740,12 @@ section.partners {
   .firstbgimg{
     .swiper-container{
       min-height: 500px;
+    }
+  }
+  .logo-container{
+    img{
+      width: 160px;
+      height: 120px;
     }
   }
 }

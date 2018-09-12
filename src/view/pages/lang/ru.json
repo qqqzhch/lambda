@@ -1,20 +1,20 @@
 {
   "head": {
-		"menu1": "ВОЗМОЖНОСТИ ПРИМЕНЕНИЯ",
-    "menu2": "ПРИНЦИП РАБОТЫ",
-    "menu3": "ЭКОСИСТЕМА",
-    "menu4": "Информация о токене",
-    "menu5": "ПЛАН ДЕЙСТВИЙ",
-    "menu6": "вход в систему/регистрация"
+		"menu1": "APPLICATION SCENARIOS",
+    "menu2": "WORKING PRINCIPLE",
+    "menu3": "ECOSYSTEM",
+    "menu4": "TOKEN DISTRIBUTION",
+    "menu5": "ROADMAP",
+    "menu6": "REGISTER/SIGN UP"
 	},
 	"foot":{
-    "menu1": "ВОЗМОЖНОСТИ ПРИМЕНЕНИЯ",
-    "menu2": "ПРИНЦИП РАБОТЫ",
-    "menu3": "ЭКОСИСТЕМА",
-    "menu4": "Информация о токене",
-    "menu5": "ПЛАН ДЕЙСТВИЙ",
-    "menu6": "блог",
-    "menu7":"связаться с нами"
+    "menu1": "APPLICATION SCENARIOS",
+    "menu2": "WORKING PRINCIPLE",
+    "menu3": "ECOSYSTEM",
+    "menu4": "TOKEN DISTRIBUTION",
+    "menu5": "ROADMAP",
+    "menu6": "BLOG",
+    "menu7":"CONTACT US"
 	},
   "section1": {
     "slide1": {

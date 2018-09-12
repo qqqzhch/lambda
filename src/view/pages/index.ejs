@@ -5,14 +5,19 @@
 		<div class="container">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="item col-md-12">
-							<h2 style="margin-bottom: 30px;font-size: 29px;"><%=lang.section1.slide1.title1%></h2>
-							<h3 style="margin-bottom: 30px;font-size: 26px;"><%=lang.section1.slide1.title2%></h3>
+					<div class="swiper-slide container">
+						<div class="col-md-12">
+							<h2 style="margin-bottom: 30px;font-size: 29px;">
+								<%=lang.section1.slide1.title1%>
+							</h2>
+							<h3 style="margin-bottom: 30px;font-size: 26px;">
+								<%=lang.section1.slide1.title2%>
+							</h3>
 							<p style="opacity:0.8;font-size:14px;text-align: left;">
 								<%=lang.section1.slide1.introduce%>
 							</p>
-							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf" target="_blank"><%=lang.section1.slide1.btnName%></a>
+							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-WhitePaper-en.pdf" target="_blank">
+								<%=lang.section1.slide1.btnName%></a>
 							<div class="contact">
 								<ul>
 									<li>
@@ -52,54 +57,91 @@
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
-						<div class="item2 col-md-12">
-							<h2 style="margin-bottom: 30px;font-size: 29px;"> <%=lang.section1.slide2.title1%></h2>
-							<h2 style="margin-bottom: 30px;font-size: 29px;"><%=lang.section1.slide2.title2%></h2>
-							<h3 style="margin-bottom: 30px;font-size: 26px;"><%=lang.section1.slide2.title3%></h3>
-							<p style="opacity:0.8;font-size:14px;text-align: left;width: 90%">
-								<%=lang.section1.slide2.introduce%>
-							</p>
-							<div class="logo-container">
-								<a href="">
-									<img src="<%= require('../../img/index/fimg2.png') %>" alt="lambda">
-								</a>
+					<div class="swiper-slide container">
+						<div class="col-md-12">
+							<% if(langType == 'en') {%>
+							<div>
+								<div class="col-sm-9 col-md-6 col-lg-6">
+									<h2 style="margin-bottom: 30px;font-size: 29px;">
+										<%=lang.section1.slide2.title1%>
+									</h2>
+									<h2 style="margin-bottom: 30px;font-size: 29px;">
+										<%=lang.section1.slide2.title2%>
+									</h2>
+									<h3 style="margin-bottom: 30px;font-size: 26px;">
+										<%=lang.section1.slide2.title3%>
+									</h3>
+									<p style="opacity:0.8;font-size:14px;text-align: left;width: 90%">
+										<%=lang.section1.slide2.introduce%>
+									</p>
+								</div>
+								<div class="col-sm-2  col-md-5 col-lg-6 logo-container">
+									<a href="">
+										<img src="<%= require('../../img/index/fimg2.png') %>" alt="lambda">
+									</a>
+								</div>
 							</div>
-							<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf" target="_blank"><%=lang.section1.slide2.btnName%></a>
-							<div class="contact">
-								<ul>
-									<li>
-										<a href="https://t.me/HelloLambda" target="_blank">
-											<img alt="telegram" src="<%= require('../../img/index/telegram.png') %>" />
-										</a>
-									</li>
-									<li>
-										<a href="https://twitter.com/Lambdaim" target="_blank">
-											<img alt="twitter" src="<%= require('../../img/index/twitter.png') %>" />
-										</a>
-									</li>
-									<li class="wechatitem">
-										<a href="https://mp.weixin.qq.com/s/rW3pOxzJwI1HXrTESTYxWA" target="_blank">
-											<img alt="wechat" src="<%= require('../../img/index/wechat.png') %>" />
-										</a>
-										<img alt="weichhart lambda" style="width:100px" class="wechatQRcode" src="<%= require('../../img/index/wechartrq.jpg') %>" />
-									</li>
-									<li>
-										<a href="https://www.facebook.com/Lambdaim" target="_blank">
-											<img alt="facebook" src="<%= require('../../img/index/facebook.png') %>" />
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/company/lambdaim" target="_blank">
-											<img alt="linkedin" src="<%= require('../../img/index/linkedin.png') %>" />
-										</a>
-									</li>
-									<li>
-										<a href="https://www.weibo.com/lambdaim?is_all=1" target="_blank">
-											<img alt="weibo" src="<%= require('../../img/index/weibo.png') %>" />
-										</a>
-									</li>
-								</ul>
+							<% } else if(langType == 'ru'){ %>
+							<div>
+								<div class="col-sm-9 col-md-8 col-lg-7">
+									<h2 style="margin-bottom: 30px;font-size: 29px;">
+										<%=lang.section1.slide2.title1%>
+									</h2>
+									<h2 style="margin-bottom: 30px;font-size: 29px;">
+										<%=lang.section1.slide2.title2%>
+									</h2>
+									<h3 style="margin-bottom: 30px;font-size: 22px;">
+										<%=lang.section1.slide2.title3%>
+									</h3>
+									<p style="opacity:0.8;font-size:14px;text-align: left;width: 90%">
+										<%=lang.section1.slide2.introduce%>
+									</p>
+								</div>
+								<div class="col-sm-2 col-md-4 col-lg-5 logo-container">
+									<a href="">
+										<img src="<%= require('../../img/index/fimg2.png') %>" alt="lambda">
+									</a>
+								</div>
+							</div>
+							<% } %>
+							<div class="col-md-12 col-sm-12">
+								<a class="btn firstBtn" href="https://www.lambda.im/doc/Lambda-Economic-White-Paper.pdf" target="_blank">
+									<%=lang.section1.slide2.btnName%></a>
+								<div class="contact">
+									<ul>
+										<li>
+											<a href="https://t.me/HelloLambda" target="_blank">
+												<img alt="telegram" src="<%= require('../../img/index/telegram.png') %>" />
+											</a>
+										</li>
+										<li>
+											<a href="https://twitter.com/Lambdaim" target="_blank">
+												<img alt="twitter" src="<%= require('../../img/index/twitter.png') %>" />
+											</a>
+										</li>
+										<li class="wechatitem">
+											<a href="https://mp.weixin.qq.com/s/rW3pOxzJwI1HXrTESTYxWA" target="_blank">
+												<img alt="wechat" src="<%= require('../../img/index/wechat.png') %>" />
+											</a>
+											<img alt="weichhart lambda" style="width:100px" class="wechatQRcode" src="<%= require('../../img/index/wechartrq.jpg') %>" />
+										</li>
+										<li>
+											<a href="https://www.facebook.com/Lambdaim" target="_blank">
+												<img alt="facebook" src="<%= require('../../img/index/facebook.png') %>" />
+											</a>
+										</li>
+										<li>
+											<a href="https://www.linkedin.com/company/lambdaim" target="_blank">
+												<img alt="linkedin" src="<%= require('../../img/index/linkedin.png') %>" />
+											</a>
+										</li>
+										<li>
+											<a href="https://www.weibo.com/lambdaim?is_all=1" target="_blank">
+												<img alt="weibo" src="<%= require('../../img/index/weibo.png') %>" />
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -112,16 +154,19 @@
 
 	<section id="demo" class="use demo">
 		<div class="container">
-			<h1><%=lang.section2.title%></h1>
+			<h1>
+				<%=lang.section2.title%>
+			</h1>
 			<div class="crowd col-md-12" style="text-align: left">
 				<p style="opacity:0.8;font-size:14px;text-align: left;    width: 90%">
 					<%=lang.section2.introduce%>
 				</p>
 				<div class="col-xs-12">
-					<img width="50%" alt="demo pdp" src="<%= require('../../img/demo/pdp.jpg') %>" >
+					<img width="50%" alt="demo pdp" src="<%= require('../../img/demo/pdp.jpg') %>">
 				</div>
 				<p style="opacity:0.8;font-size:14px;text-align: left;    width: 90%">
-					<a style="padding: 6px" class="btn sendBtn" href="https://github.com/LambdaIM/demo" target="_blank"><%=lang.section2.btnName%></a>
+					<a style="padding: 6px" class="btn sendBtn" href="https://github.com/LambdaIM/demo" target="_blank">
+						<%=lang.section2.btnName%></a>
 				</p>
 			</div>
 		</div>
@@ -129,49 +174,75 @@
 
 	<section id="scene" class="scene use">
 		<div class="container">
-			<h1><%=lang.section3.title%></h1>
+			<h1>
+				<%=lang.section3.title%>
+			</h1>
 			<div class="row wrapper">
 				<div class=" scene-item col-lg-w-30 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log1.png') %>" >
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log1.png') %>">
 					</div>
-					<h2 class="title"><%=lang.section3.item1.title%></h2>
-					<p class="intro"><%=lang.section3.item1.introduce%></p>
+					<h2 class="title">
+						<%=lang.section3.item1.title%>
+					</h2>
+					<p class="intro">
+						<%=lang.section3.item1.introduce%>
+					</p>
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log2.png') %>" >
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log2.png') %>">
 					</div>
-					<h2 class="title"><%=lang.section3.item2.title%></h2>
-					<p class="intro"><%=lang.section3.item2.introduce%></p>
+					<h2 class="title">
+						<%=lang.section3.item2.title%>
+					</h2>
+					<p class="intro">
+						<%=lang.section3.item2.introduce%>
+					</p>
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log3.png') %>" >
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log3.png') %>">
 					</div>
-					<h2 class="title"><%=lang.section3.item3.title%></h2>
-					<p class="intro"><%=lang.section3.item3.introduce%></p>
+					<h2 class="title">
+						<%=lang.section3.item3.title%>
+					</h2>
+					<p class="intro">
+						<%=lang.section3.item3.introduce%>
+					</p>
 				</div>
 				<div class="scene-item col-lg-w-30 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log4.png') %>" >
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log4.png') %>">
 					</div>
-					<h2 class="title"><%=lang.section3.item4.title%></h2>
-					<p class="intro"><%=lang.section3.item4.introduce%></p>
+					<h2 class="title">
+						<%=lang.section3.item4.title%>
+					</h2>
+					<p class="intro">
+						<%=lang.section3.item4.introduce%>
+					</p>
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="<%=lang.section3.title%>" class="car" src="<%= require('../../img/index/scene-log5.png') %>" >
+						<img alt="<%=lang.section3.title%>" class="car" src="<%= require('../../img/index/scene-log5.png') %>">
 					</div>
-					<h2 class="title"><%=lang.section3.item5.title%></h2>
-					<p class="intro"><%=lang.section3.item5.introduce%></p>
+					<h2 class="title">
+						<%=lang.section3.item5.title%>
+					</h2>
+					<p class="intro">
+						<%=lang.section3.item5.introduce%>
+					</p>
 				</div>
 				<div class="scene-item col-lg-w-30 col-lg-offset-w-10 col-md-4 col-sm-6 col-xs-12">
 					<div class="imglogo-wrapper">
-						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log6.png') %>" >
+						<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/scene-log6.png') %>">
 					</div>
-					<h2 class="title"><%=lang.section3.item6.title%></h2>
-					<p class="intro"><%=lang.section3.item6.introduce%></p>
+					<h2 class="title">
+						<%=lang.section3.item6.title%>
+					</h2>
+					<p class="intro">
+						<%=lang.section3.item6.introduce%>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -179,51 +250,81 @@
 
 	<section id="design" class="use design">
 		<div class="container">
-			<h1><%=lang.section4.title%></h1>
+			<h1>
+				<%=lang.section4.title%>
+			</h1>
 			<!-- <span>ARCHITECTURE DESIGN</span> -->
 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
-					<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/design.png') %>" >
+					<img alt="<%=lang.section3.title%>" src="<%= require('../../img/index/design.png') %>">
 				</div>
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item1.title%></p>
-						<p class="intro"><%=lang.section4.item1.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item1.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item1.introduce%>
+						</p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item2.title%></p>
-						<p class="intro"><%=lang.section4.item2.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item2.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item2.introduce%>
+						</p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item3.title%></p>
-						<p class="intro"><%=lang.section4.item3.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item3.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item3.introduce%>
+						</p>
 					</div>
 				</div>
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item4.title%></p>
-						<p class="intro"><%=lang.section4.item4.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item4.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item4.introduce%>
+						</p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item5.title%></p>
-						<p class="intro"><%=lang.section4.item5.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item5.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item5.introduce%>
+						</p>
 					</div>
 				</div>
 				<div class="jgsj col-md-4 col-sm-4 ">
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item6.title%></p>
-						<p class="intro"><%=lang.section4.item6.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item6.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item6.introduce%>
+						</p>
 					</div>
 					<div class="intro-wrapper">
 						<div class="jg-circle"></div>
-						<p class="title"><%=lang.section4.item7.title%></p>
-						<p class="intro"><%=lang.section4.item7.introduce%></p>
+						<p class="title">
+							<%=lang.section4.item7.title%>
+						</p>
+						<p class="intro">
+							<%=lang.section4.item7.introduce%>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -232,35 +333,45 @@
 
 	<section id="principle" class="use principle">
 		<div class="container">
-			<h1><%=lang.section5.title%></h1>
+			<h1>
+				<%=lang.section5.title%>
+			</h1>
 			<!-- <span>WORKING PRINCIPLE</span> -->
 			<div class="row">
 				<div class="col-xs-12 ">
 					<div class="tab-btn">
 						<div class="line"></div>
-						<div class="item active col-md-1 col-sm-2 col-xxs-3">
+						<div class="item active col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p><%=lang.section5.item1.title%></p>
+							<p>
+								<%=lang.section5.item1.title%>
+							</p>
 						</div>
-						<div class="item col-md-1 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
+						<div class="item col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p><%=lang.section5.item2.title%></p>
+							<p>
+								<%=lang.section5.item2.title%>
+							</p>
 						</div>
-						<div class="item col-md-2 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
+						<div class="item col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p><%=lang.section5.item3.title%></p>
+							<p>
+								<%=lang.section5.item3.title%>
+							</p>
 						</div>
-						<div class="item col-md-2 col-sm-2 col-lg-offset-half col-md-offset-half col-sm-offset-half col-xs-3 col-xxs-offset-0">
+						<div class="item col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="btn-icon">
 								<i></i>
 							</div>
-							<p><%=lang.section5.item4.title%></p>
+							<p>
+								<%=lang.section5.item4.title%>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -269,20 +380,28 @@
 				<div class="col-lg-8 col-md-10">
 					<div class="tab-contents">
 						<div class="contents-active">
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-1.png') %>" >
-							<p class="work-intro" style="opacity:0.8"><%=lang.section5.item1.introduce%></p>
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-1.png') %>">
+							<p class="work-intro" style="opacity:0.8">
+								<%=lang.section5.item1.introduce%>
+							</p>
 						</div>
 						<div>
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-2.png') %>" >
-							<p class="work-intro"><%=lang.section5.item2.introduce%></p>
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-2.png') %>">
+							<p class="work-intro">
+								<%=lang.section5.item2.introduce%>
+							</p>
 						</div>
 						<div>
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-3.png') %>" >
-							<p class="work-intro"><%=lang.section5.item3.introduce%></p>
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-3.png') %>">
+							<p class="work-intro">
+								<%=lang.section5.item3.introduce%>
+							</p>
 						</div>
 						<div>
-							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-4.png') %>" >
-							<p class="work-intro"><%=lang.section5.item4.introduce%></p>
+							<img alt="WORKING PRINCIPLE" class="work-img" src="<%= require('../../img/index/yl-4.png') %>">
+							<p class="work-intro">
+								<%=lang.section5.item4.introduce%>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -292,14 +411,18 @@
 
 	<section id="ecosystem" class="use ecosystem">
 		<div class="container">
-			<h1><%=lang.section6.title%></h1>
+			<h1>
+				<%=lang.section6.title%>
+			</h1>
 			<!-- <span>ECOSYSTEM</span> -->
 			<div class="row">
 				<div class="col-xs-12">
-					<img alt="ECOSYSTEM" src="<%= require('../../img/index/Group2x.png') %>" >
+					<img alt="ECOSYSTEM" src="<%= require('../../img/index/Group2x.png') %>">
 				</div>
 				<div class="col-md-offset-1 col-md-10 col-sm-12 col-xxs-12">
-					<p style="text-align:center;opacity:0.8"><%=lang.section6.introduce%></p>
+					<p style="text-align:center;opacity:0.8">
+						<%=lang.section6.introduce%>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -307,11 +430,13 @@
 
 	<section id="tokensale" class="use tokensale">
 		<div class="container">
-			<h1><%=lang.section7.title%></h1>
+			<h1>
+				<%=lang.section7.title%>
+			</h1>
 			<!-- <span>ECOSYSTEM</span> -->
 			<div class="row">
 				<div class="col-xs-12">
-					<img alt="<%=lang.section7.title%>" src="<%= require('../../img/index/tokensale3.jpg') %>" >
+					<img alt="<%=lang.section7.title%>" src="<%= require('../../img/index/tokensale3.jpg') %>">
 				</div>
 				<!-- <div class="col-md-offset-1 col-md-10 col-sm-12 col-xxs-12">
 					<p style="text-align:center;opacity:0.8">SSS.</p>
@@ -322,7 +447,9 @@
 
 	<section id="roadmap" class="use roadmap">
 		<div class="container">
-			<h1><%=lang.section8.title%></h1>
+			<h1>
+				<%=lang.section8.title%>
+			</h1>
 			<div class="row" style="position:relative">
 				<div class="col-md-offset-1 col-md-11 box-wrapper">
 					<div class="row">
@@ -338,11 +465,19 @@
 						<div class="p-l-0 col-sm-10 col-xxs-10">
 							<div class="year-list">
 								<span class="num">2017 Q4</span>
-								<h2 class="title"><%=lang.section8.item1.title%></h2>
+								<h2 class="title">
+									<%=lang.section8.item1.title%>
+								</h2>
 								<ul>
-									<li><%=lang.section8.item1.introduce1%></li>
-									<li><%=lang.section8.item1.introduce2%></li>
-									<li><%=lang.section8.item1.introduce3%></li>
+									<li>
+										<%=lang.section8.item1.introduce1%>
+									</li>
+									<li>
+										<%=lang.section8.item1.introduce2%>
+									</li>
+									<li>
+										<%=lang.section8.item1.introduce3%>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -359,14 +494,28 @@
 						<div class="p-l-0 col-sm-10 col-xxs-10">
 							<div class="year-list">
 								<span class="num">2018 Q1</span>
-								<h2 class="title"><%=lang.section8.item2.title%></h2>
+								<h2 class="title">
+									<%=lang.section8.item2.title%>
+								</h2>
 								<ul>
-									<li><%=lang.section8.item2.introduce1%></li>
-									<li><%=lang.section8.item2.introduce2%></li>
-									<li><%=lang.section8.item2.introduce3%></li>
-									<li><%=lang.section8.item2.introduce4%></li>
-									<li><%=lang.section8.item2.introduce5%></li>
-									<li><%=lang.section8.item2.introduce6%></li>
+									<li>
+										<%=lang.section8.item2.introduce1%>
+									</li>
+									<li>
+										<%=lang.section8.item2.introduce2%>
+									</li>
+									<li>
+										<%=lang.section8.item2.introduce3%>
+									</li>
+									<li>
+										<%=lang.section8.item2.introduce4%>
+									</li>
+									<li>
+										<%=lang.section8.item2.introduce5%>
+									</li>
+									<li>
+										<%=lang.section8.item2.introduce6%>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -383,15 +532,31 @@
 						<div class="p-l-0 col-sm-10 col-xxs-10">
 							<div class="year-list">
 								<span class="num">2018 Q3</span>
-								<h2 class="title"><%=lang.section8.item3.title%></h2>
+								<h2 class="title">
+									<%=lang.section8.item3.title%>
+								</h2>
 								<ul>
-									<li><%=lang.section8.item3.introduce1%></li>
-									<li><%=lang.section8.item3.introduce2%></li>
-									<li><%=lang.section8.item3.introduce3%></li>
-									<li><%=lang.section8.item3.introduce4%></li>
-									<li><%=lang.section8.item3.introduce5%></li>
-									<li><%=lang.section8.item3.introduce6%></li>
-									<li><%=lang.section8.item3.introduce7%></li>
+									<li>
+										<%=lang.section8.item3.introduce1%>
+									</li>
+									<li>
+										<%=lang.section8.item3.introduce2%>
+									</li>
+									<li>
+										<%=lang.section8.item3.introduce3%>
+									</li>
+									<li>
+										<%=lang.section8.item3.introduce4%>
+									</li>
+									<li>
+										<%=lang.section8.item3.introduce5%>
+									</li>
+									<li>
+										<%=lang.section8.item3.introduce6%>
+									</li>
+									<li>
+										<%=lang.section8.item3.introduce7%>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -408,11 +573,19 @@
 						<div class="p-l-0 col-sm-10 col-xxs-10">
 							<div class="year-list">
 								<span class="num">2018 Q4</span>
-								<h2 class="title"><%=lang.section8.item4.title%></h2>
+								<h2 class="title">
+									<%=lang.section8.item4.title%>
+								</h2>
 								<ul>
-									<li><%=lang.section8.item4.introduce1%></li>
-									<li><%=lang.section8.item4.introduce2%></li>
-									<li><%=lang.section8.item4.introduce3%></li>
+									<li>
+										<%=lang.section8.item4.introduce1%>
+									</li>
+									<li>
+										<%=lang.section8.item4.introduce2%>
+									</li>
+									<li>
+										<%=lang.section8.item4.introduce3%>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -429,11 +602,19 @@
 						<div class="p-l-0 col-sm-10 col-xxs-10">
 							<div class="year-list">
 								<span class="num">2019 Q1</span>
-								<h2 class="title"><%=lang.section8.item5.title%></h2>
+								<h2 class="title">
+									<%=lang.section8.item5.title%>
+								</h2>
 								<ul>
-									<li><%=lang.section8.item5.introduce1%></li>
-									<li><%=lang.section8.item5.introduce2%></li>
-									<li><%=lang.section8.item5.introduce3%></li>
+									<li>
+										<%=lang.section8.item5.introduce1%>
+									</li>
+									<li>
+										<%=lang.section8.item5.introduce2%>
+									</li>
+									<li>
+										<%=lang.section8.item5.introduce3%>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -450,11 +631,16 @@
 						<div class="p-l-0 col-sm-10 col-xxs-10">
 							<div class="year-list">
 								<span class="num">2019 Q2</span>
-								<h2 class="title"><%=lang.section8.item6.title%></h2>
+								<h2 class="title">
+									<%=lang.section8.item6.title%>
+								</h2>
 								<ul>
-									<li><%=lang.section8.item6.introduce1%>
+									<li>
+										<%=lang.section8.item6.introduce1%>
 									</li>
-									<li><%=lang.section8.item6.introduce2%></li>
+									<li>
+										<%=lang.section8.item6.introduce2%>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -474,7 +660,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/xiaoyang-he-0083b428/">
 								<img alt="He Xiaoyang" src="<%= require('../../img/index/hxy.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>">
 
 							</a>
 						</div>
@@ -491,7 +677,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/monanli/">
 								<img alt="Li Monan" src="<%= require('../../img/index/lmn.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>">
 							</a>
 						</div>
 						<p class="name">
@@ -505,7 +691,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/bingqing-he-119019b1/">
 								<img alt="He Bingqing" src="<%= require('../../img/index/hbq.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>">
 							</a>
 						</div>
 						<p class="name">
@@ -520,7 +706,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/hongqiangguo/">
 								<img alt="Guo Hongqiang" src="<%= require('../../img/index/ghq.png') %>">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>">
 							</a>
 						</div>
 						<p class="name">
@@ -533,7 +719,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/%E6%B5%B7%E5%BC%BA-%E9%AB%98-187a60166/">
 								<img src="<%= require('../../img/index/gaohq.png') %>" alt="Gao Haiqiang">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>">
 							</a>
 						</div>
 						<p class="name">
@@ -547,7 +733,7 @@
 						<div class="head-wrapper">
 							<a target="_blank" class="userimga" href="https://www.linkedin.com/in/haijun-zhao-0a76652b/">
 								<img src="<%= require('../../img/index/zhj.png') %>" alt="Zhao Haijun">
-								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>" >
+								<img alt="linkedin" class="userlinkimg" src="<%= require('../../img/index/linkedin.png') %>">
 							</a>
 						</div>
 						<p class="name">
@@ -584,7 +770,7 @@
 						<p class="name">Liu Chunhua</p>
 					</div>
 				</div>
-				
+
 				<div class="col-md-3 col-xxs-4">
 					<div class="head">
 						<div class="head-wrapper">
