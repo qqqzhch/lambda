@@ -126,20 +126,28 @@ section.banner-contents {
         font-size: 29px;
         margin-bottom: 20px;
       }
-      video {
-        margin-top: 10px;
-      }
-      .time {
-        font-size: 60px;
-        .size {
+      .countdown {
+        font-size: 48px;
+        // text-align: center;
+        margin: 10px 0;
+        p {
+          text-align: center;
+          font-family: DINCondensed-Bold, DINCondensedBold;
           display: inline-block;
+          width: 50px;
           height: 100px;
-          line-height: 80px;
+          font-size: 40px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 40px;
+          line-height: 100px;
+          margin: 0;
         }
       }
       .introduce {
         h3 {
+          font-family: DINCondensed-Bold, DINCondensedBold;
           margin-bottom: 30px;
+          font-size: 22px2;
         }
       }
       .bottom {
@@ -149,48 +157,47 @@ section.banner-contents {
         }
         .partners-wrapper {
           .partner {
-            height: 45px;
+            height: 50px;
             img {
-              width: 130px;
+              width: 100%;
               height: 50px;
             }
           }
         }
         .more {
-          background-color: rgba(30, 30, 30, 0.8);
-          a{
+          // background:rgba(255,255,255,.1);
+          a {
             position: relative;
             display: inline-block;
             width: 100%;
             height: 100%;
-            .dot{
+            .dot {
               margin-left: 3px;
               display: inline-block;
               top: 50%;
               transform: translateY(-50%);
               width: 10px;
               height: 10px;
-              background-color: rgba(127, 141, 152,0.2);
+              background: rgba(255, 255, 255, 0.2);
               border-radius: 100%;
             }
-            .dot1{
+            .dot1 {
               position: absolute;
               left: 0;
             }
-            .dot2{
+            .dot2 {
               position: absolute;
               left: 18px;
             }
-            .dot3{
+            .dot3 {
               position: absolute;
               left: 36px;
             }
           }
-         
         }
       }
-      .btn{
-        background:#3dddd1;
+      .btn {
+        background: #3dddd1;
       }
     }
   }
@@ -713,6 +720,31 @@ section.partners {
     }
   }
 }
+@media(min-width:1000px){
+  .btn-tem1{
+    display: none !important;
+  }
+}
+@media (min-width:320px) and (max-width:1000px){
+  .bottom{
+    display: none;
+  }
+  .countdown{
+    display: none;
+  }
+  .introduce{
+    display: none;
+  }
+  .btn-tem{
+    display: none !important;
+  }
+  .btn-tem1{
+    height: 50px;
+    width: 350px;
+    font-size: 18px;
+    padding: 20px 40px !important;
+  }
+}
 @media (max-width: 767px) {
   .scene-item {
     height: auto;
@@ -823,7 +855,6 @@ section.partners {
     }
   }
 }
-
 @media (max-width: 480px) {
   .col-xxs-6 {
     width: 50%;
