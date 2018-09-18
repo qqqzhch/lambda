@@ -24,6 +24,23 @@ $(document).ready(function(){
 	// $('#getting-started').countdown('2018/06/30', function(event) {
 	// 	$(this).html('<p>'+event.strftime('%n')+'</p>:'+'<p>'+event.strftime('%H')+'</p>:'+'<p>'+event.strftime('%M')+'</p>:'+'<p>'+event.strftime('%S')+'</p>');
 	// });
+
+
+	var starttime = new Date(2018,8,19,14,0,0);
+  setInterval(function () {
+    var nowtime = new Date();
+    var time = starttime - nowtime;
+    var day = parseInt(time / 1000 / 60 / 60 / 24);
+    var hour = parseInt(time / 1000 / 60 / 60 % 24);
+    var minute = parseInt(time / 1000 / 60 % 60);
+    var seconds = parseInt(time / 1000 % 60);
+		$('.day').html(day+"D");
+		$('.hour').html(hour+"H");
+		$('.minute').html(minute+"M");
+		$('.seconds').html(seconds+"S");
+  }, 1000);
+
+
 	const parsed = queryString.parse(location.search);
 	var from=parsed.from;
 	//#tokenregister
@@ -53,10 +70,10 @@ $(document).ready(function(){
 			bulletActiveClass: 'my-bullet-active',
 		},
 		loop: true,
-		autoplay:{
-			disableOnInteraction: true,
-		},
-		speed: 4000,
+		// autoplay:{
+		// 	disableOnInteraction: true,
+		// },
+		// speed: 4000,
 		// navigation: {
     //   nextEl: '.swiper-button-next',
     //   prevEl: '.swiper-button-prev',
