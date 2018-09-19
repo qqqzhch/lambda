@@ -34,7 +34,7 @@
   "section2": {
     "title": "Lambda Provable Data Possession Demo",
     "introduce": "We believe that all storage projects follow the core requirement of Provable Data Integrity.Also, it is crucial for data projects to store data in an infeasible storage node and make them trusted and secure, in the academic world, there are mainly two approaches which are Provable Data Possession (PDP) and Proofs of Retrievability (POR) depending on the usage scenarios. Lambda has applied these two approaches in blockchain through academic research and engineering verification, which has eliminated the core obstacles of decentralized storage.  ",
-    "btnName": "Download Demo"
+    "btnName": "Demo"
   },
   "section3": {
     "title": "APPLICATION SCENARIOS",
