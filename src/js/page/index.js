@@ -23,7 +23,7 @@ var queryString = require("query-string");
 $(document).ready(function() {
   // 增加事件
   //倒计时
-  $("#time").countdown(new Date(2018, 8,25, 22, 0, 0), function(event) {
+  $("#time").countdown(new Date(2018, 8, 25, 22, 0, 0), function(event) {
     $(this).html(
       "<p>" +
         event.strftime("%n") +
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
   const parsed = queryString.parse(location.search);
   var from = parsed.from;
-  //#tokenregister
+  // #tokenregister
   //#tokenwhitelist
 
   if (from) {
@@ -54,12 +54,17 @@ $(document).ready(function() {
       "href",
       "https://token.lambda.im/index.html?from=" + from + "#/register"
     );
+    $("#contribute").attr(
+      "href",
+      "https://token.lambda.im/index.html?from=" + from + "#/register"
+    );
   }
 
   $(".trigger").click(function() {
-		$.alert('ICO is coming soon！')
+    // $.alert('ICO is coming soon！')
     // console.log('asdasd')
   });
+
   $(".line").css("width", window.screen.width);
 
   $(".principle .item").on("click", function() {
