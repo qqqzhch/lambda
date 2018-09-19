@@ -121,41 +121,50 @@ section.banner-contents {
       min-height: 128px;
     }
     .new {
+      .row1{
+        .video{
+          margin: 15px 0;
+        }
+      }
+      .row2{
+        padding-left: 10px;
+        .countdown {
+          font-size: 48px;
+          // text-align: center;
+          margin-top: 10px;
+          margin-bottom:34px;
+          p {
+            text-align: center;
+            font-family: DINCondensed-Bold, DINCondensedBold;
+            display: inline-block;
+            width: 50px;
+            height: 100px;
+            font-size: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            line-height: 100px;
+            margin: 0;
+          }
+        }
+        .introduce {
+          h3 {
+            font-family: DINCondensed-Bold, DINCondensedBold;
+            margin-bottom: 20px;
+            font-size: 16px;
+          }
+        }
+      }
       h2 {
         font-size: 29px;
         margin-bottom: 20px;
-      }
-      .countdown {
-        font-size: 48px;
-        // text-align: center;
-        margin: 10px 0;
-        p {
-          text-align: center;
-          font-family: DINCondensed-Bold, DINCondensedBold;
-          display: inline-block;
-          width: 50px;
-          height: 100px;
-          font-size: 40px;
-          background: rgba(255, 255, 255, 0.1);
-          border-radius: 40px;
-          line-height: 100px;
-          margin: 0;
-        }
-      }
-      .introduce {
-        h3 {
-          font-family: DINCondensed-Bold, DINCondensedBold;
-          margin-bottom: 20px;
-          font-size: 16px;
-        }
       }
       .bottom {
         .subtitle2 {
           font-size: 28px;
           font-weight: 400;
           color: #3cdcd1;
+          margin-left: 15px;
           margin-bottom: 30px;
-          margin-left: 20px;
         }
         .part-wrapper {
           .part {
@@ -652,6 +661,9 @@ section.partners {
   .container {
     width: 1200px;
   }
+  .row1{
+    max-width: 600px;
+  }
 }
 @media (max-width: 1441px) {
   section.banner-contents {
@@ -734,7 +746,7 @@ section.partners {
     min-height: 450px;
     .video{
       width: 300px;
-      height: 200px;
+      height: 145px;
     }
     .subtitle{
       line-height: 35px;
@@ -863,8 +875,8 @@ section.partners {
     .swiper-container {
       min-height: 500px;
       .video{
-        width: 200px;
-        height: 130px;
+        width: 220px;
+        height: 100px;
       }
       h3{
         font-size: 14px;
