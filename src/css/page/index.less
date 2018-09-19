@@ -98,7 +98,6 @@ section.banner-contents {
     );
   }
 }
-
 .firstbgimg {
   .swiper-container {
     position: relative;
@@ -146,21 +145,24 @@ section.banner-contents {
       .introduce {
         h3 {
           font-family: DINCondensed-Bold, DINCondensedBold;
-          margin-bottom: 30px;
-          font-size: 22px2;
+          margin-bottom: 20px;
+          font-size: 16px;
         }
       }
       .bottom {
-        h3 {
+        .subtitle2 {
+          font-size: 28px;
+          font-weight: 400;
+          color: #3cdcd1;
           margin-bottom: 30px;
           margin-left: 20px;
         }
-        .partners-wrapper {
-          .partner {
+        .part-wrapper {
+          .part {
             height: 50px;
             img {
               width: 100%;
-              height: 50px;
+              height: 30px;
             }
           }
         }
@@ -196,10 +198,19 @@ section.banner-contents {
           }
         }
       }
-      .btn {
-        background: #3dddd1;
+      .btn-tem1{
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 230px;
+        color: #fff;
+        font-family: DINCondensed-Bold, DINCondensedBold;
+        font-size: 18px;
+        background: linear-gradient(174.6deg,rgba(61, 221, 209, 1),rgba(0, 183, 255, 1));
       }
     }
+
   }
 }
 section.principle {
@@ -706,6 +717,16 @@ section.partners {
   }
   .swiper-container {
     min-height: 450px;
+    .video{
+      width: 300px;
+      height: 200px;
+    }
+    .subtitle{
+      line-height: 35px;
+    }
+    h3{
+      font-size: 18px;
+    }
   }
 }
 @media (min-width: 480px) and (max-width: 1135px) {
@@ -720,29 +741,9 @@ section.partners {
     }
   }
 }
-@media(min-width:1000px){
-  .btn-tem1{
-    display: none !important;
-  }
-}
 @media (min-width:320px) and (max-width:1000px){
   .bottom{
     display: none;
-  }
-  .countdown{
-    display: none;
-  }
-  .introduce{
-    display: none;
-  }
-  .btn-tem{
-    display: none !important;
-  }
-  .btn-tem1{
-    height: 50px;
-    width: 350px;
-    font-size: 18px;
-    padding: 20px 40px !important;
   }
 }
 @media (max-width: 767px) {
@@ -846,6 +847,13 @@ section.partners {
   .firstbgimg {
     .swiper-container {
       min-height: 500px;
+      .video{
+        width: 200px;
+        height: 130px;
+      }
+      h3{
+        font-size: 14px;
+      }
     }
   }
   .logo-container {
@@ -854,6 +862,7 @@ section.partners {
       height: 120px;
     }
   }
+
 }
 @media (max-width: 480px) {
   .col-xxs-6 {

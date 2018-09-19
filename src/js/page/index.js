@@ -23,7 +23,7 @@ var queryString = require("query-string");
 $(document).ready(function() {
   // 增加事件
   //倒计时
-  $("#time").countdown(new Date(2018, 8,25, 14, 0, 0), function(event) {
+  $("#time").countdown(new Date(2018, 8,25, 22, 0, 0), function(event) {
     $(this).html(
       "<p>" +
         event.strftime("%n") +
@@ -56,7 +56,7 @@ $(document).ready(function() {
     );
   }
 
-  $(".btn").click(function() {
+  $(".trigger").click(function() {
 		$.alert('ICO is coming soon！')
     // console.log('asdasd')
   });
