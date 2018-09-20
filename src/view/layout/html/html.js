@@ -8,7 +8,8 @@ const pf = {
 	description: '',
 	keywords: '',
 	pageId: '',
-	lang:lang()
+	lang:lang(),
+	langType:'en'
 };
 
 

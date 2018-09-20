@@ -22,25 +22,61 @@
 						<%=lang.head.menu3%>
 					</a>
 				</div>
-				<div class="nav-item mao">
+				<!-- <div class="nav-item mao">
 					<a href="#tokensale">
 						<%=lang.head.menu4%>
 					</a>
-				</div>
-				<div class="nav-item mao">
+				</div> -->
+				<!-- <div class="nav-item mao">
 					<a href="#roadmap">
 						<%=lang.head.menu5%>
 					</a>
-				</div>
+				</div> -->
 
 				<div class="nav-item mao">
 					<a id="tokenregister" href="https://token.lambda.im/#/register">
 						<%=lang.head.menu6%>
 					</a>
 				</div>
-				<div class="nav-item" style="float:right">
 
+				<div class="nav-item language">
+					<div class="title-wrapper">
+						<% if(langType == 'en') {%>
+						<div class="lang-flag">
+							<img class="img" src="<%= require('../../img/index/en.svg') %>" alt="">
+						</div>
+						<span class="lang title">English</span>
+						<% } else if(langType == 'ru'){ %>
+						<div class="lang-flag">
+							<img class="img" src="<%= require('../../img/index/ru.png') %>" alt="">
+						</div>
+						<span class="lang title">Russia</span>
+						<% } %>
+						<div class="arrow"></div>
+					</div>
+					<div class="lang-wrapper">
+
+						<div class="lang-item">
+							<div class="lang-flag">
+								<img src="<%= require('../../img/index/ru.png') %>" alt="">
+							</div>
+							<span class="lang">
+								<a class="ru" href="https://www.lambda.im/ru">Russia</a>
+							</span>
+						</div>
+
+						<div class="lang-item">
+							<div class="lang-flag">
+								<img src="<%= require('../../img/index/en.svg') %>" alt="">
+							</div>
+							<span class="lang">
+								<a class="en" href="https://www.lambda.im/en">English</a>
+							</span>
+						</div>
+
+					</div>
 				</div>
+
 			</div>
 			<div class="navbar-toggle-btn">
 				<span class="bar"></span>
@@ -51,28 +87,39 @@
 				<div class="nav-item active" id="products" style="border-top: 1px solid rgba(255,255,255,.2)">
 					<ul>
 						<li class="mao">
-							<a href="javascript:;"><%=lang.head.menu1%></a>
+							<a href="javascript:;">
+								<%=lang.head.menu1%></a>
 						</li>
 						<li class="mao">
-							<a href="javascript:;"><%=lang.head.menu2%></a>
+							<a href="javascript:;">
+								<%=lang.head.menu2%></a>
 						</li>
 						<li class="mao">
-							<a href="javascript:;"><%=lang.head.menu3%></a>
+							<a href="javascript:;">
+								<%=lang.head.menu3%></a>
 						</li>
 						<li class="mao">
-							<a href="javascript:;"><%=lang.head.menu4%></a>
+							<a href="javascript:;">
+								<%=lang.head.menu4%></a>
 						</li>
 						<li class="mao">
-							<a href="javascript:;"><%=lang.head.menu5%></a>
+							<a href="javascript:;">
+								<%=lang.head.menu5%></a>
 						</li>
 						<li class="mao">
-							<a href="https://token.lambda.im/#/register"><%=lang.head.menu6%></a>
+							<a href="https://token.lambda.im/#/register">
+								<%=lang.head.menu6%></a>
 						</li>
 					</ul>
 				</div>
 				<div class="nav-item" id="language">
 					<ul>
-
+						<li class="mao">
+							<a href="https://www.lambda.im/en">English</a>
+						</li>
+						<li class="mao">
+							<a href="https://www.lambda.im/ru">Russia</a>
+						</li>
 					</ul>
 				</div>
 			</div>
