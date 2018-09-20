@@ -23,7 +23,7 @@ var queryString = require("query-string");
 $(document).ready(function() {
   // 增加事件
   //倒计时
-  $("#time").countdown(new Date(2018, 8, 25, 22, 0, 0), function(event) {
+  $("#time").countdown(new Date(2018, 9, 2, 14, 0, 0), function(event) {
     $(this).html(
       "<p>" +
         event.strftime("%n") +
@@ -97,5 +97,21 @@ $(document).ready(function() {
     //   nextEl: '.swiper-button-next',
     //   prevEl: '.swiper-button-prev',
     // },
+  });
+
+  $.ajax({
+    url: "https://www.youtube.com/watch?v=O6olM_dry08&feature=youtu.be",
+    cache: false,
+    timeout:1000*5,
+    success: function(html){
+    //  console.log(html)
+      $(".in").css("display","none");
+      $(".out").css("display","block");
+    },
+    error:function(err){
+      // console.log(err)
+      $(".in").css("display","block");
+      $(".out").css("display","none");
+    }
   });
 });
