@@ -93,25 +93,15 @@ $(document).ready(function() {
     // 	disableOnInteraction: true,
     // },
     // speed: 4000,
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
   });
 
-  $.ajax({
-    url: "https://www.youtube.com/watch?v=O6olM_dry08&feature=youtu.be",
-    cache: false,
-    timeout:1000*5,
-    success: function(html){
-    //  console.log(html)
-      $(".in").css("display","none");
-      $(".out").css("display","block");
-    },
-    error:function(err){
-      // console.log(err)
-      $(".in").css("display","block");
-      $(".out").css("display","none");
-    }
-  });
+  // console.log( window.navigator.language );
+
+  if(window.navigator.language !=='zh-CN'){
+    $(".in").css("display","none");
+    $(".out").css("display","block");
+  }else{
+    $(".in").css("display","block");
+    $(".out").css("display","none");
+  }
 });
