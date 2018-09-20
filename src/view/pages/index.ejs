@@ -5,6 +5,72 @@
 		<div class="container">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
+					<div class="swiper-slide container new">
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-8 col-md-8 col-sm-7 col-xs-10 row1">
+								<h2>Lambda ICO is coming on 9.19!</h2>
+								<h4>Offical wallet ETH Adress：0xf12f3F09010336F3677E8AC4e18a71650e634820</h4>
+								<span>*Only trust the information from our official website and from our official Telegram group : <a style="color:#3cdcd1" target="_blank" href="https://t.me/HelloLambda">https://t.me/HelloLambda</a>,Please don’t use any exchange wallets or contribute without whitelist.<span>									
+								<video class="video in" src="https://www.lambda.im/assets/video/1537251347221346.mp4" controls="controls"></video>
+								<iframe class="video out" src="https://www.youtube.com/embed/O6olM_dry08" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+
+							<div class="col-lg-4 col-md-4 col-sm-5 col-xs-8 row2">
+								<div id="time" class="countdown"></div>
+								<div class="introduce">
+									<h3>Time of Public Sale Start : 14:00 UTC ,19th SEP，2018</h3>
+									<h3>Time of Public Sale End: 14:00 UTC ,2nd OCT，2018,or before if hard cap is reached</h3>
+								</div>
+								<a class="btn-tem1" href="https://token.lambda.im/#/register" id="contribute">Go contribution！</a>
+							</div>
+						</div>
+
+						<div class="col-lg-12 col-md-12 col-sm-12  col-xs-12 bottom">
+							<h3 class="subtitle2">Lambda is founded by 23 Top VCs</h3>
+							<div class="part-wrapper col-lg-12 col-md-12 col-sm-12  col-xs-12">
+
+								<div class="part col-lg-2 col-md-2 col-xs-2 col-sm-2">
+									<div class="partners-logo partners-logoyfy">
+										<img class="bitman" style="height:20px;" src="<%= require('../../img/partner/Bitman.png') %>" alt="Bitman">
+									</div>
+								</div>
+
+								<div class="part col-lg-2 col-md-2 col-xs-2 col-sm-2">
+									<div class="partners-logo partners-logoyfy">
+										<img class="yfy" src="<%= require('../../img/partner/1_zhenge.png') %>" alt="zhenge">
+									</div>
+								</div>
+
+								<div class="part col-lg-2 col-md-2 col-xs-2 col-sm-2">
+									<div class="partners-logo partners-logoyfy">
+										<img class="yfy" src="<%= require('../../img/partner/2_daduhui.png') %>" alt="daduhui">
+									</div>
+								</div>
+
+								<div class="part col-lg-2 col-md-2 col-xs-2 col-sm-2">
+									<div class="partners-logo partners-logoyfy">
+										<img class="yfy" src="<%= require('../../img/partner/4_ceyuan.png') %>" alt="ceyuan">
+									</div>
+								</div>
+
+								<div class="part col-lg-2 col-md-2 col-xs-2 col-sm-2">
+									<div class="partners-logo partners-logoyfy">
+										<img class="yfy" src="<%= require('../../img/partner/6_BlockVC.png') %>" alt="BlockVC">
+									</div>
+								</div>
+
+								<div class="part more col-lg-1 col-md-1 col-xs-1 col-sm-1">
+									<a href="#partners">
+										<span class="dot dot1"></span>
+										<span class="dot dot2"></span>
+										<span class="dot dot3"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="swiper-slide container">
 						<div class="col-md-12">
 							<h2 style="margin-bottom: 30px;font-size: 29px;">
@@ -57,6 +123,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="swiper-slide container">
 						<div class="col-md-12">
 							<% if(langType == 'en') {%>
@@ -161,11 +228,11 @@
 				<p style="opacity:0.8;font-size:14px;text-align: left;    width: 90%">
 					<%=lang.section2.introduce%>
 				</p>
-				<div class="col-xs-12">
+				<!-- <div class="col-xs-12">
 					<img width="50%" alt="demo pdp" src="<%= require('../../img/demo/pdp.jpg') %>">
-				</div>
+				</div> -->
 				<p style="opacity:0.8;font-size:14px;text-align: left;    width: 90%">
-					<a style="padding: 6px" class="btn sendBtn" href="https://github.com/LambdaIM/demo" target="_blank">
+					<a style="padding: 6px" class="btn sendBtn" href="http://demo.lambda.im/" target="_blank">
 						<%=lang.section2.btnName%></a>
 				</p>
 			</div>
@@ -652,7 +719,9 @@
 
 	<section id="team" class="use team">
 		<div class="container">
-			<h1><%=lang.section9.title1%></h1>
+			<h1>
+				<%=lang.section9.title1%>
+			</h1>
 			<div class="row team-wrapper">
 				<div class="col-md-3 col-xxs-4">
 					<div class="head">
@@ -741,7 +810,9 @@
 					</div>
 				</div>
 			</div>
-			<h1><%=lang.section9.title2%></h1>
+			<h1>
+				<%=lang.section9.title2%>
+			</h1>
 			<div class="row team-wrapper team-wrapper2">
 				<div class="col-md-3 col-xxs-4  ">
 					<div class="head">
@@ -807,7 +878,9 @@
 
 	<section id="partners" class="use partners">
 		<div class="container">
-			<h1><%=lang.section10.title%></h1>
+			<h1>
+				<%=lang.section10.title%>
+			</h1>
 			<div class="row partners-wrapper">
 				<div class="partners768  col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 col-xxs-offset-1 col-xxs-10 ">
 					<div class="partners-logo partners-logoyfy">
