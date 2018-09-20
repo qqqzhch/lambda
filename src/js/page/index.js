@@ -27,7 +27,7 @@ $(document).ready(function() {
     $(this).html(
       "<p>" +
         event.strftime("%n") +
-        "</p>:" +
+        "</p> " +
         "<p>" +
         event.strftime("%H") +
         "</p>:" +
