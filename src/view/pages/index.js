@@ -7,7 +7,7 @@ const pageConfig = {
 	description: 'Lambda blockchain  is a fast, safe, and scalable blockchain infrastructure project',
 	keywords: 'Lambda,Blockchain,Storage,Dapps,IPFS,filecoin,aws',
 	lang:lang(),
-	langType:"en"
+	langType:"ru"
 };
 
 module.exports = layout.init(pageConfig).run(content(pageConfig));
