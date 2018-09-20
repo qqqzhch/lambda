@@ -62,5 +62,14 @@ $(document).ready(function(){
     //   prevEl: '.swiper-button-prev',
     // },
 	})
-
+	$('.ru').click(function(){
+		$('.img').attr('src',"https://cdn.wpml.org/wp-content/plugins/sitepress-multilingual-cms/res/flags/ru.png?x53954");
+		$('.title').html('Russia');
+	})
+	$('.en').click(function(){
+		$('.img').attr('src',"https://www.coinex8.com/static/media/02_02.language_english.67e1a74c.svg");
+		$('.title').html('English');
+	})
+	// console.log(lang);
+	
 });
