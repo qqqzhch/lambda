@@ -101,8 +101,8 @@ $(document).ready(function() {
     $(".in").css("display","none");
     $(".out").css("display","block");
   }else{
-    $(".in").css("display","block");
     $(".out").css("display","none");
+    $(".in").css("display","block");
   }
 
   $('.ru').click(function(){
