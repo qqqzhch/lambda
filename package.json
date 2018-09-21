@@ -4,34 +4,37 @@
   "description": "pure front demo",
   "scripts": {
     "test": "null",
-    "dev": "rm -rf dist/  && webpack && webpack-dev-server",
-    "win": "rm -rf dist/  &&  webpack-dev-server --inline --progress --config webpack.win.config.js",
-    "build": "rm -rf dist/  && env ENV=production  webpack -p"
+    "dev": "rm -rf dist/  && env ENV=development webpack-dev-server  --inline --progress --config webpackv4.js ",
+    "build": "rm -rf dist/  &&  env ENV=production  webpack -p --config webpackv4.js ",
+    "win": "rm -rf dist/  && env ENV=development  webpack-dev-server --inline --progress --config webpackv4.win.js"
   },
   "author": "lambda-fed",
   "devDependencies": {
+    "@webpack-cli/migrate": "^0.1.0",
     "cross-env": "^3.1.4",
-    "css-loader": "^0.23.1",
+    "css-loader": "^1.0.0",
     "ejs-loader": "^0.3.0",
     "ejs-tpl-loader": "^1.0.5",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.8.5",
+    "file-loader": "^2.0.0",
     "glob": "^7.1.1",
     "html-loader": "^0.4.3",
-    "html-webpack-harddisk-plugin": "^0.1.0",
-    "html-webpack-plugin": "^2.9.0",
+    "html-webpack-harddisk-plugin": "^0.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "jquery": "^1.12.0",
     "less": "^2.6.0",
-    "less-loader": "^2.2.2",
+    "less-loader": "^4.1.0",
     "raw-loader": "^0.5.1",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "6.x",
+    "babel-loader": "^8.0.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "copy-webpack-plugin": "^4.5.2",
@@ -44,11 +47,11 @@
     "json-loader": "^0.5.7",
     "lesshat": "^4.1.0",
     "markdown-loader": "^4.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
     "moment": "^2.22.2",
     "query-string": "5",
     "slick-carousel": "^1.6.0",
     "swiper": "4.3.5",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack-manifest-plugin": "1.3.2"
+    "uglifyjs-webpack-plugin": "^1.3.0"
   }
 }
