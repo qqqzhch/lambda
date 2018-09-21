@@ -9,7 +9,7 @@ const pf = {
 	keywords: '',
 	pageId: '',
 	lang:lang(),
-	langType:'en'
+	langType:'ru'
 };
 
 
